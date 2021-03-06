@@ -1,0 +1,1343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* calcloanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* calcloanTests.m */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* calcloanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* calcloanTests.m */; };
+		45D5E4188FC321B03D16B6A5 /* libPods-calcloan-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4D74CDEE4A12304F390DBF /* libPods-calcloan-tvOSTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9DCE5C2FA1CE69C75C16B935 /* libPods-calcloan-calcloanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15DA827A92B5591AD992E2A /* libPods-calcloan-calcloanTests.a */; };
+		CBBB24F469EA74BB78BA58E3 /* libPods-calcloan-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A91D256FF1775D95DAC4FF /* libPods-calcloan-tvOS.a */; };
+		E5DDE813E3884AD8A78E73ED /* libPods-calcloan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E53C9D605BCA6B2511AD652 /* libPods-calcloan.a */; };
+		248A4FFC76574872B88E82D5 /* AR-Almarai-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8A2826AE44D63A6FA8E79 /* AR-Almarai-Font.ttf */; };
+		BACAD68D8DF84FE1AE884045 /* AR-BBC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B84AB500D9451EAD9921B0 /* AR-BBC-Regular.ttf */; };
+		67F795A5FDED4E32B660DF02 /* Actor-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AF3C2DA5174DF6BA14DAC5 /* Actor-Regular.ttf */; };
+		C7E1E7650C334A0CBA3FF496 /* AlMohanad.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79E17BBB7B354F9E8C1A18BD /* AlMohanad.ttf */; };
+		C0587F868C3A401F928D93A6 /* Almarai-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3521F9699154369BE08E85F /* Almarai-Bold.ttf */; };
+		AF1E4BADC8CC48189B4EB33A /* Almarai-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AE314C9BE124FCE816131D1 /* Almarai-ExtraBold.ttf */; };
+		05C91323E15D462582AF8D70 /* Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C586A841DF6F48C88E0DDA99 /* Almarai-Light.ttf */; };
+		485FB2310BE34619B8B9A9F7 /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C97C1EC19E1941DCB1D5AE03 /* Almarai-Regular.ttf */; };
+		1B84AB7D37C2433DA78D13B1 /* Ar-Ith.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBA570FCA9C248CAB68D260B /* Ar-Ith.ttf */; };
+		5C2449BB693B49E1A9F1ECEA /* ArchivoNarrow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9798E39A347429E67CCE9 /* ArchivoNarrow-Bold.ttf */; };
+		A83CE3C23AFE46ECBF2D9A90 /* ArchivoNarrow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED0240156E374C42AC7A59B3 /* ArchivoNarrow-BoldItalic.ttf */; };
+		939C85441A4841C69A79149D /* ArchivoNarrow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639B4BF57B9546ECB1BE68A3 /* ArchivoNarrow-Italic.ttf */; };
+		9FA625C53D524A398FE823F3 /* ArchivoNarrow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEF029230BB44D029A293A19 /* ArchivoNarrow-Medium.ttf */; };
+		3FE0A30266E94817A978E6F3 /* ArchivoNarrow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2566665DB8BF46E3B4AFACD2 /* ArchivoNarrow-MediumItalic.ttf */; };
+		3824F6EA33474624BFB336D9 /* ArchivoNarrow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09A6A4F862B247B8A88C6C3D /* ArchivoNarrow-Regular.ttf */; };
+		9E298CC155904414922055D7 /* ArchivoNarrow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43C2317612164DB087D37E76 /* ArchivoNarrow-SemiBold.ttf */; };
+		1186E021B2BD43FA942677FE /* ArchivoNarrow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45CE529ABAC44738898358D3 /* ArchivoNarrow-SemiBoldItalic.ttf */; };
+		CBFEDEDEB2714976B9EF0E5F /* Bein-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 796EAA3D394145DF81120672 /* Bein-Black.ttf */; };
+		57284C704EB5437F9CE27557 /* Bein-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEB828B222594BBCB510B28D /* Bein-Normal.ttf */; };
+		1552D9642F754462AC9C9D03 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 541E506436D74FD999A5AAC2 /* Cairo-Black.ttf */; };
+		A08FE326B74140CA9B9AB253 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BF3E57FB8414D7484B0D7F6 /* Cairo-Bold.ttf */; };
+		77E7AED7C1B14C06B6F386CF /* Cairo_Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF780339C0A24442B0C47776 /* Cairo_Black.ttf */; };
+		4839CAA4150842A5BEA4A5E2 /* Cairo_Semi_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5129A3EB6A514D77BA3C15FD /* Cairo_Semi_Bold.ttf */; };
+		95BA409663E145F5B78FE2EA /* Changa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7E56695966E4AF3921707E8 /* Changa-Bold.ttf */; };
+		65619302E0574070BF7FA974 /* Changa-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE9AD1F8BD64867B5ABB79C /* Changa-ExtraBold.ttf */; };
+		5BCF9B9EA2E84FE4A9031B0E /* Changa-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B488B2FED4547B4582A0E /* Changa-ExtraLight.ttf */; };
+		1592558211024841B246500F /* Changa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18748C2E4C834C4593335C65 /* Changa-Light.ttf */; };
+		D6F0DF18C76B4CDBA482D432 /* Changa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E389949726D7407A8EF7E3AF /* Changa-Medium.ttf */; };
+		70E006E1EE2A4821973713BE /* Changa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FBE7D82A70B4AED84837D35 /* Changa-Regular.ttf */; };
+		3027ED90F307455BB39CC02B /* Changa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B59B5018E59A4E8A89657D36 /* Changa-SemiBold.ttf */; };
+		8D8379119C7045588B1FD381 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C42E356C2A524E04AAB6BE5C /* Comfortaa-Bold.ttf */; };
+		812350E187A34909BB30BDE3 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D57849A76FF54AECA5D33D9F /* Comfortaa-Light.ttf */; };
+		A1D10BAF48994B7180E9E4F8 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F6DE4C3C3646C5B7269746 /* Comfortaa-Medium.ttf */; };
+		01649B09E80247DD8A6D9C27 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBB008CF3D45C0B4F5213D /* Comfortaa-Regular.ttf */; };
+		3BDCFD1F177C4DD0B0930030 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB51019EB6742BFB9364FBD /* Comfortaa-SemiBold.ttf */; };
+		426D4348D598495E9BD1CC22 /* Sst-Arabicbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0391A8C8151C4BE9A9E0199C /* Sst-Arabicbold.ttf */; };
+		6C1D90403E134F269084F4E9 /* Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894ADC831859476681E95749 /* Tajawal-Black.ttf */; };
+		498C35BA9395482AAE0B8E1A /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C95429AF44BBC8AA55A82 /* Tajawal-Bold.ttf */; };
+		6D875B5A24544D0DBCA2AD75 /* Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84B2C50103B404983526912 /* Tajawal-ExtraBold.ttf */; };
+		ACBA58A225664958AB353EF5 /* Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47C5A464C2A442A9B88D353B /* Tajawal-ExtraLight.ttf */; };
+		9BD8E100BBA6456EA8E79B2E /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5E2801F46A648E39E8E2BDF /* Tajawal-Light.ttf */; };
+		B6731A6E447D4D39A2194807 /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31290CDD450A46A1B518B89F /* Tajawal-Medium.ttf */; };
+		E1B828157E644E538D136AA6 /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C67CE1918A4624B1A2659E /* Tajawal-Regular.ttf */; };
+		4D3D500C93624AEE8B3A7121 /* Varela-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 776487A4A0C141C4B52D7A37 /* Varela-Regular.ttf */; };
+		170E04CE913742C6847DE7E0 /* cairo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE6C2B4517F41DBBFA5A364 /* cairo.ttf */; };
+		F7B71ACE7F454E20B14DD77B /* 9squares-AlBoardman.json in Resources */ = {isa = PBXBuildFile; fileRef = 2078D54A8D734A3595317921 /* 9squares-AlBoardman.json */; };
+		8010F0FBAF7143B9AC3FF4E6 /* HamburgerArrow.json in Resources */ = {isa = PBXBuildFile; fileRef = BC0CD4E3D44B49DCA4051FC9 /* HamburgerArrow.json */; };
+		5780DDD0F4B243E6BD42E93D /* LineAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66C92FD9A78A431EBC5D5A90 /* LineAnimation.json */; };
+		CF0FA4A2E9FE4D5794FF9684 /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = FC5B2E8EBC6D40529BCB7293 /* LottieLogo1.json */; };
+		D8F092F3038C4482A3061132 /* LottieLogo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BC18EBC9B32404EA52727A6 /* LottieLogo2.json */; };
+		25EEB25BCA4D405EBB21B4C4 /* LottieWalkthrough.json in Resources */ = {isa = PBXBuildFile; fileRef = CDE415BE97DF45369173FD98 /* LottieWalkthrough.json */; };
+		265C30469FE04A37B190557E /* MotionCorpse-Jrcanest.json in Resources */ = {isa = PBXBuildFile; fileRef = D539884B39C249CE88C34696 /* MotionCorpse-Jrcanest.json */; };
+		79AD86109ED54932B63E2FCF /* PinJump.json in Resources */ = {isa = PBXBuildFile; fileRef = 425978491C1743F484C734B3 /* PinJump.json */; };
+		F36CF2989E5143BDA34E0491 /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = EBB318645FA6470CA935D8A2 /* TwitterHeart.json */; };
+		8B38DE1C3D7F48C5ACE19612 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = 98AA0DEBAF8D488C97F43238 /* Watermelon.json */; };
+		112491851829492FBD5CB5F6 /* car.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9EDAAD9DC4CD8878B81CA /* car.json */; };
+		CDB8CEEA6B044AF7905D4595 /* cart.json in Resources */ = {isa = PBXBuildFile; fileRef = 328E51E9A5294B8ABC3407F1 /* cart.json */; };
+		28C0320227014BE88889BEED /* circle-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = C449CB5B0137416EBD48B012 /* circle-animation.json */; };
+		EF11537B14DA4BB7A4F7E474 /* circle-loading-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = A1A531C51886489080F2C0B6 /* circle-loading-animation.json */; };
+		A434C45D613847AD90EAE479 /* empty_cart.json in Resources */ = {isa = PBXBuildFile; fileRef = D10482091868440B9E3375F2 /* empty_cart.json */; };
+		F87B9FD9D3BC4D2FB19D18CD /* empty_shape.json in Resources */ = {isa = PBXBuildFile; fileRef = 44F507EC35664D3AA47F3327 /* empty_shape.json */; };
+		AEB85CE1880D4F1EBA25404C /* expo_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B9EAB83F6EF441EE919BEB06 /* expo_loading.json */; };
+		2E1978907D0040649AD2D61D /* offline.json in Resources */ = {isa = PBXBuildFile; fileRef = FD68E08B7F3748D1AB861AC3 /* offline.json */; };
+		7FBD66A0184C4D0BAA1587A4 /* brands.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0977F9A41E44E1AC72AAD5 /* brands.png */; };
+		F73660E807734C3A8327AD9C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF57B808F5D482BB3C428B3 /* home.png */; };
+		B3D4EBDDE2C648109E421E7F /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1071C4694BF846ABB50F483B /* info.png */; };
+		A8775F68A1B048BA91EC1CF4 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F493A9052C4809AF3980F8 /* user.png */; };
+		ECC15CB43A0D40EB8882AFF2 /* bgblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 83338F12FCD34C4DBA542F6A /* bgblue.png */; };
+		4359882CEAF44C9E91CF50DB /* bggray.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B70D5BB5343ED81008901 /* bggray.png */; };
+		B2C880499E0046A38B800EBD /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A3BD71984A24B1F9AAB7FF7 /* loading.gif */; };
+		20A8C1AE349C4AC18A43D23D /* loading_sm.gif in Resources */ = {isa = PBXBuildFile; fileRef = D7F7B4228ED148EE8C2C63A6 /* loading_sm.gif */; };
+		865A12BF295A4650AE142F99 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 162B1535B19C48F692AA24A2 /* pin.png */; };
+		6895CBC60825428F8668C2BE /* pin_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA1816A0494F5EBE0116A7 /* pin_old.png */; };
+		AD6DEE341149425090F6E5B6 /* whiteBg.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA6E0DED6024E22B66344C8 /* whiteBg.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = calcloan;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "calcloan-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* calcloanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calcloanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* calcloanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calcloanTests.m; sourceTree = "<group>"; };
+		033ED8BFE5BA8ADC93DE19C1 /* Pods-calcloan-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-calcloan-tvOS/Pods-calcloan-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* calcloan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calcloan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = calcloan/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = calcloan/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = calcloan/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = calcloan/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = calcloan/main.m; sourceTree = "<group>"; };
+		21A91D256FF1775D95DAC4FF /* libPods-calcloan-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-calcloan-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A4D74CDEE4A12304F390DBF /* libPods-calcloan-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-calcloan-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* calcloan-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calcloan-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* calcloan-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calcloan-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		301C9C8EC730E1ABB8663B39 /* Pods-calcloan-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan-tvOS.release.xcconfig"; path = "Target Support Files/Pods-calcloan-tvOS/Pods-calcloan-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		3433CAE4BBC8723BDA139E76 /* Pods-calcloan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan.debug.xcconfig"; path = "Target Support Files/Pods-calcloan/Pods-calcloan.debug.xcconfig"; sourceTree = "<group>"; };
+		4F7F688BF26DD6ED9D87EEF8 /* Pods-calcloan-calcloanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan-calcloanTests.release.xcconfig"; path = "Target Support Files/Pods-calcloan-calcloanTests/Pods-calcloan-calcloanTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E393B45183194C032FFB394 /* Pods-calcloan-calcloanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan-calcloanTests.debug.xcconfig"; path = "Target Support Files/Pods-calcloan-calcloanTests/Pods-calcloan-calcloanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CFECE45D6C1E98C639C38E5 /* Pods-calcloan-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-calcloan-tvOSTests/Pods-calcloan-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E53C9D605BCA6B2511AD652 /* libPods-calcloan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-calcloan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = calcloan/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A5D6825D2F989DACF3101AF /* Pods-calcloan-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-calcloan-tvOSTests/Pods-calcloan-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BEAC07FCD877B52F4ADEB27 /* Pods-calcloan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calcloan.release.xcconfig"; path = "Target Support Files/Pods-calcloan/Pods-calcloan.release.xcconfig"; sourceTree = "<group>"; };
+		A15DA827A92B5591AD992E2A /* libPods-calcloan-calcloanTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-calcloan-calcloanTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		9EE8A2826AE44D63A6FA8E79 /* AR-Almarai-Font.ttf */ = {isa = PBXFileReference; name = "AR-Almarai-Font.ttf"; path = "../assets/fonts/AR-Almarai-Font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39B84AB500D9451EAD9921B0 /* AR-BBC-Regular.ttf */ = {isa = PBXFileReference; name = "AR-BBC-Regular.ttf"; path = "../assets/fonts/AR-BBC-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2AF3C2DA5174DF6BA14DAC5 /* Actor-Regular.ttf */ = {isa = PBXFileReference; name = "Actor-Regular.ttf"; path = "../assets/fonts/Actor-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		79E17BBB7B354F9E8C1A18BD /* AlMohanad.ttf */ = {isa = PBXFileReference; name = "AlMohanad.ttf"; path = "../assets/fonts/AlMohanad.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B3521F9699154369BE08E85F /* Almarai-Bold.ttf */ = {isa = PBXFileReference; name = "Almarai-Bold.ttf"; path = "../assets/fonts/Almarai-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4AE314C9BE124FCE816131D1 /* Almarai-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Almarai-ExtraBold.ttf"; path = "../assets/fonts/Almarai-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C586A841DF6F48C88E0DDA99 /* Almarai-Light.ttf */ = {isa = PBXFileReference; name = "Almarai-Light.ttf"; path = "../assets/fonts/Almarai-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C97C1EC19E1941DCB1D5AE03 /* Almarai-Regular.ttf */ = {isa = PBXFileReference; name = "Almarai-Regular.ttf"; path = "../assets/fonts/Almarai-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CBA570FCA9C248CAB68D260B /* Ar-Ith.ttf */ = {isa = PBXFileReference; name = "Ar-Ith.ttf"; path = "../assets/fonts/Ar-Ith.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8DC9798E39A347429E67CCE9 /* ArchivoNarrow-Bold.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-Bold.ttf"; path = "../assets/fonts/ArchivoNarrow-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED0240156E374C42AC7A59B3 /* ArchivoNarrow-BoldItalic.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-BoldItalic.ttf"; path = "../assets/fonts/ArchivoNarrow-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		639B4BF57B9546ECB1BE68A3 /* ArchivoNarrow-Italic.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-Italic.ttf"; path = "../assets/fonts/ArchivoNarrow-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DEF029230BB44D029A293A19 /* ArchivoNarrow-Medium.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-Medium.ttf"; path = "../assets/fonts/ArchivoNarrow-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2566665DB8BF46E3B4AFACD2 /* ArchivoNarrow-MediumItalic.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-MediumItalic.ttf"; path = "../assets/fonts/ArchivoNarrow-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		09A6A4F862B247B8A88C6C3D /* ArchivoNarrow-Regular.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-Regular.ttf"; path = "../assets/fonts/ArchivoNarrow-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43C2317612164DB087D37E76 /* ArchivoNarrow-SemiBold.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-SemiBold.ttf"; path = "../assets/fonts/ArchivoNarrow-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		45CE529ABAC44738898358D3 /* ArchivoNarrow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "ArchivoNarrow-SemiBoldItalic.ttf"; path = "../assets/fonts/ArchivoNarrow-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		796EAA3D394145DF81120672 /* Bein-Black.ttf */ = {isa = PBXFileReference; name = "Bein-Black.ttf"; path = "../assets/fonts/Bein-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EEB828B222594BBCB510B28D /* Bein-Normal.ttf */ = {isa = PBXFileReference; name = "Bein-Normal.ttf"; path = "../assets/fonts/Bein-Normal.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		541E506436D74FD999A5AAC2 /* Cairo-Black.ttf */ = {isa = PBXFileReference; name = "Cairo-Black.ttf"; path = "../assets/fonts/Cairo-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BF3E57FB8414D7484B0D7F6 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; name = "Cairo-Bold.ttf"; path = "../assets/fonts/Cairo-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CF780339C0A24442B0C47776 /* Cairo_Black.ttf */ = {isa = PBXFileReference; name = "Cairo_Black.ttf"; path = "../assets/fonts/Cairo_Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5129A3EB6A514D77BA3C15FD /* Cairo_Semi_Bold.ttf */ = {isa = PBXFileReference; name = "Cairo_Semi_Bold.ttf"; path = "../assets/fonts/Cairo_Semi_Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D7E56695966E4AF3921707E8 /* Changa-Bold.ttf */ = {isa = PBXFileReference; name = "Changa-Bold.ttf"; path = "../assets/fonts/Changa-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3AE9AD1F8BD64867B5ABB79C /* Changa-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Changa-ExtraBold.ttf"; path = "../assets/fonts/Changa-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8E4B488B2FED4547B4582A0E /* Changa-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Changa-ExtraLight.ttf"; path = "../assets/fonts/Changa-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		18748C2E4C834C4593335C65 /* Changa-Light.ttf */ = {isa = PBXFileReference; name = "Changa-Light.ttf"; path = "../assets/fonts/Changa-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E389949726D7407A8EF7E3AF /* Changa-Medium.ttf */ = {isa = PBXFileReference; name = "Changa-Medium.ttf"; path = "../assets/fonts/Changa-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5FBE7D82A70B4AED84837D35 /* Changa-Regular.ttf */ = {isa = PBXFileReference; name = "Changa-Regular.ttf"; path = "../assets/fonts/Changa-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B59B5018E59A4E8A89657D36 /* Changa-SemiBold.ttf */ = {isa = PBXFileReference; name = "Changa-SemiBold.ttf"; path = "../assets/fonts/Changa-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C42E356C2A524E04AAB6BE5C /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; name = "Comfortaa-Bold.ttf"; path = "../assets/fonts/Comfortaa-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D57849A76FF54AECA5D33D9F /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; name = "Comfortaa-Light.ttf"; path = "../assets/fonts/Comfortaa-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		84F6DE4C3C3646C5B7269746 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; name = "Comfortaa-Medium.ttf"; path = "../assets/fonts/Comfortaa-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8BFBB008CF3D45C0B4F5213D /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; name = "Comfortaa-Regular.ttf"; path = "../assets/fonts/Comfortaa-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6BB51019EB6742BFB9364FBD /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; name = "Comfortaa-SemiBold.ttf"; path = "../assets/fonts/Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0391A8C8151C4BE9A9E0199C /* Sst-Arabicbold.ttf */ = {isa = PBXFileReference; name = "Sst-Arabicbold.ttf"; path = "../assets/fonts/Sst-Arabicbold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		894ADC831859476681E95749 /* Tajawal-Black.ttf */ = {isa = PBXFileReference; name = "Tajawal-Black.ttf"; path = "../assets/fonts/Tajawal-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D4C95429AF44BBC8AA55A82 /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; name = "Tajawal-Bold.ttf"; path = "../assets/fonts/Tajawal-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C84B2C50103B404983526912 /* Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Tajawal-ExtraBold.ttf"; path = "../assets/fonts/Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		47C5A464C2A442A9B88D353B /* Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Tajawal-ExtraLight.ttf"; path = "../assets/fonts/Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5E2801F46A648E39E8E2BDF /* Tajawal-Light.ttf */ = {isa = PBXFileReference; name = "Tajawal-Light.ttf"; path = "../assets/fonts/Tajawal-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31290CDD450A46A1B518B89F /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; name = "Tajawal-Medium.ttf"; path = "../assets/fonts/Tajawal-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		84C67CE1918A4624B1A2659E /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; name = "Tajawal-Regular.ttf"; path = "../assets/fonts/Tajawal-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		776487A4A0C141C4B52D7A37 /* Varela-Regular.ttf */ = {isa = PBXFileReference; name = "Varela-Regular.ttf"; path = "../assets/fonts/Varela-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CAE6C2B4517F41DBBFA5A364 /* cairo.ttf */ = {isa = PBXFileReference; name = "cairo.ttf"; path = "../assets/fonts/cairo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2078D54A8D734A3595317921 /* 9squares-AlBoardman.json */ = {isa = PBXFileReference; name = "9squares-AlBoardman.json"; path = "../assets/animations/9squares-AlBoardman.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC0CD4E3D44B49DCA4051FC9 /* HamburgerArrow.json */ = {isa = PBXFileReference; name = "HamburgerArrow.json"; path = "../assets/animations/HamburgerArrow.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66C92FD9A78A431EBC5D5A90 /* LineAnimation.json */ = {isa = PBXFileReference; name = "LineAnimation.json"; path = "../assets/animations/LineAnimation.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC5B2E8EBC6D40529BCB7293 /* LottieLogo1.json */ = {isa = PBXFileReference; name = "LottieLogo1.json"; path = "../assets/animations/LottieLogo1.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9BC18EBC9B32404EA52727A6 /* LottieLogo2.json */ = {isa = PBXFileReference; name = "LottieLogo2.json"; path = "../assets/animations/LottieLogo2.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CDE415BE97DF45369173FD98 /* LottieWalkthrough.json */ = {isa = PBXFileReference; name = "LottieWalkthrough.json"; path = "../assets/animations/LottieWalkthrough.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D539884B39C249CE88C34696 /* MotionCorpse-Jrcanest.json */ = {isa = PBXFileReference; name = "MotionCorpse-Jrcanest.json"; path = "../assets/animations/MotionCorpse-Jrcanest.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		425978491C1743F484C734B3 /* PinJump.json */ = {isa = PBXFileReference; name = "PinJump.json"; path = "../assets/animations/PinJump.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBB318645FA6470CA935D8A2 /* TwitterHeart.json */ = {isa = PBXFileReference; name = "TwitterHeart.json"; path = "../assets/animations/TwitterHeart.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		98AA0DEBAF8D488C97F43238 /* Watermelon.json */ = {isa = PBXFileReference; name = "Watermelon.json"; path = "../assets/animations/Watermelon.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0EB9EDAAD9DC4CD8878B81CA /* car.json */ = {isa = PBXFileReference; name = "car.json"; path = "../assets/animations/car.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		328E51E9A5294B8ABC3407F1 /* cart.json */ = {isa = PBXFileReference; name = "cart.json"; path = "../assets/animations/cart.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C449CB5B0137416EBD48B012 /* circle-animation.json */ = {isa = PBXFileReference; name = "circle-animation.json"; path = "../assets/animations/circle-animation.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A1A531C51886489080F2C0B6 /* circle-loading-animation.json */ = {isa = PBXFileReference; name = "circle-loading-animation.json"; path = "../assets/animations/circle-loading-animation.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D10482091868440B9E3375F2 /* empty_cart.json */ = {isa = PBXFileReference; name = "empty_cart.json"; path = "../assets/animations/empty_cart.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		44F507EC35664D3AA47F3327 /* empty_shape.json */ = {isa = PBXFileReference; name = "empty_shape.json"; path = "../assets/animations/empty_shape.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B9EAB83F6EF441EE919BEB06 /* expo_loading.json */ = {isa = PBXFileReference; name = "expo_loading.json"; path = "../assets/animations/expo_loading.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD68E08B7F3748D1AB861AC3 /* offline.json */ = {isa = PBXFileReference; name = "offline.json"; path = "../assets/animations/offline.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D0977F9A41E44E1AC72AAD5 /* brands.png */ = {isa = PBXFileReference; name = "brands.png"; path = "../assets/icons/brands.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ACF57B808F5D482BB3C428B3 /* home.png */ = {isa = PBXFileReference; name = "home.png"; path = "../assets/icons/home.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1071C4694BF846ABB50F483B /* info.png */ = {isa = PBXFileReference; name = "info.png"; path = "../assets/icons/info.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90F493A9052C4809AF3980F8 /* user.png */ = {isa = PBXFileReference; name = "user.png"; path = "../assets/icons/user.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83338F12FCD34C4DBA542F6A /* bgblue.png */ = {isa = PBXFileReference; name = "bgblue.png"; path = "../assets/images/bgblue.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		157B70D5BB5343ED81008901 /* bggray.png */ = {isa = PBXFileReference; name = "bggray.png"; path = "../assets/images/bggray.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0A3BD71984A24B1F9AAB7FF7 /* loading.gif */ = {isa = PBXFileReference; name = "loading.gif"; path = "../assets/images/loading.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D7F7B4228ED148EE8C2C63A6 /* loading_sm.gif */ = {isa = PBXFileReference; name = "loading_sm.gif"; path = "../assets/images/loading_sm.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		162B1535B19C48F692AA24A2 /* pin.png */ = {isa = PBXFileReference; name = "pin.png"; path = "../assets/images/pin.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		33DA1816A0494F5EBE0116A7 /* pin_old.png */ = {isa = PBXFileReference; name = "pin_old.png"; path = "../assets/images/pin_old.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ABA6E0DED6024E22B66344C8 /* whiteBg.png */ = {isa = PBXFileReference; name = "whiteBg.png"; path = "../assets/images/whiteBg.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DCE5C2FA1CE69C75C16B935 /* libPods-calcloan-calcloanTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DDE813E3884AD8A78E73ED /* libPods-calcloan.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBB24F469EA74BB78BA58E3 /* libPods-calcloan-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D5E4188FC321B03D16B6A5 /* libPods-calcloan-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* calcloanTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* calcloanTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = calcloanTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* calcloan */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = calcloan;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				7E53C9D605BCA6B2511AD652 /* libPods-calcloan.a */,
+				A15DA827A92B5591AD992E2A /* libPods-calcloan-calcloanTests.a */,
+				21A91D256FF1775D95DAC4FF /* libPods-calcloan-tvOS.a */,
+				2A4D74CDEE4A12304F390DBF /* libPods-calcloan-tvOSTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* calcloan */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* calcloanTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				F109184342A74B3B92789ECD /* Pods */,
+				04D532E0303A4E80A4F7894E /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* calcloan.app */,
+				00E356EE1AD99517003FC87E /* calcloanTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* calcloan-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* calcloan-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F109184342A74B3B92789ECD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3433CAE4BBC8723BDA139E76 /* Pods-calcloan.debug.xcconfig */,
+				9BEAC07FCD877B52F4ADEB27 /* Pods-calcloan.release.xcconfig */,
+				5E393B45183194C032FFB394 /* Pods-calcloan-calcloanTests.debug.xcconfig */,
+				4F7F688BF26DD6ED9D87EEF8 /* Pods-calcloan-calcloanTests.release.xcconfig */,
+				033ED8BFE5BA8ADC93DE19C1 /* Pods-calcloan-tvOS.debug.xcconfig */,
+				301C9C8EC730E1ABB8663B39 /* Pods-calcloan-tvOS.release.xcconfig */,
+				6CFECE45D6C1E98C639C38E5 /* Pods-calcloan-tvOSTests.debug.xcconfig */,
+				9A5D6825D2F989DACF3101AF /* Pods-calcloan-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		04D532E0303A4E80A4F7894E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9EE8A2826AE44D63A6FA8E79 /* AR-Almarai-Font.ttf */,
+				39B84AB500D9451EAD9921B0 /* AR-BBC-Regular.ttf */,
+				D2AF3C2DA5174DF6BA14DAC5 /* Actor-Regular.ttf */,
+				79E17BBB7B354F9E8C1A18BD /* AlMohanad.ttf */,
+				B3521F9699154369BE08E85F /* Almarai-Bold.ttf */,
+				4AE314C9BE124FCE816131D1 /* Almarai-ExtraBold.ttf */,
+				C586A841DF6F48C88E0DDA99 /* Almarai-Light.ttf */,
+				C97C1EC19E1941DCB1D5AE03 /* Almarai-Regular.ttf */,
+				CBA570FCA9C248CAB68D260B /* Ar-Ith.ttf */,
+				8DC9798E39A347429E67CCE9 /* ArchivoNarrow-Bold.ttf */,
+				ED0240156E374C42AC7A59B3 /* ArchivoNarrow-BoldItalic.ttf */,
+				639B4BF57B9546ECB1BE68A3 /* ArchivoNarrow-Italic.ttf */,
+				DEF029230BB44D029A293A19 /* ArchivoNarrow-Medium.ttf */,
+				2566665DB8BF46E3B4AFACD2 /* ArchivoNarrow-MediumItalic.ttf */,
+				09A6A4F862B247B8A88C6C3D /* ArchivoNarrow-Regular.ttf */,
+				43C2317612164DB087D37E76 /* ArchivoNarrow-SemiBold.ttf */,
+				45CE529ABAC44738898358D3 /* ArchivoNarrow-SemiBoldItalic.ttf */,
+				796EAA3D394145DF81120672 /* Bein-Black.ttf */,
+				EEB828B222594BBCB510B28D /* Bein-Normal.ttf */,
+				541E506436D74FD999A5AAC2 /* Cairo-Black.ttf */,
+				2BF3E57FB8414D7484B0D7F6 /* Cairo-Bold.ttf */,
+				CF780339C0A24442B0C47776 /* Cairo_Black.ttf */,
+				5129A3EB6A514D77BA3C15FD /* Cairo_Semi_Bold.ttf */,
+				D7E56695966E4AF3921707E8 /* Changa-Bold.ttf */,
+				3AE9AD1F8BD64867B5ABB79C /* Changa-ExtraBold.ttf */,
+				8E4B488B2FED4547B4582A0E /* Changa-ExtraLight.ttf */,
+				18748C2E4C834C4593335C65 /* Changa-Light.ttf */,
+				E389949726D7407A8EF7E3AF /* Changa-Medium.ttf */,
+				5FBE7D82A70B4AED84837D35 /* Changa-Regular.ttf */,
+				B59B5018E59A4E8A89657D36 /* Changa-SemiBold.ttf */,
+				C42E356C2A524E04AAB6BE5C /* Comfortaa-Bold.ttf */,
+				D57849A76FF54AECA5D33D9F /* Comfortaa-Light.ttf */,
+				84F6DE4C3C3646C5B7269746 /* Comfortaa-Medium.ttf */,
+				8BFBB008CF3D45C0B4F5213D /* Comfortaa-Regular.ttf */,
+				6BB51019EB6742BFB9364FBD /* Comfortaa-SemiBold.ttf */,
+				0391A8C8151C4BE9A9E0199C /* Sst-Arabicbold.ttf */,
+				894ADC831859476681E95749 /* Tajawal-Black.ttf */,
+				5D4C95429AF44BBC8AA55A82 /* Tajawal-Bold.ttf */,
+				C84B2C50103B404983526912 /* Tajawal-ExtraBold.ttf */,
+				47C5A464C2A442A9B88D353B /* Tajawal-ExtraLight.ttf */,
+				F5E2801F46A648E39E8E2BDF /* Tajawal-Light.ttf */,
+				31290CDD450A46A1B518B89F /* Tajawal-Medium.ttf */,
+				84C67CE1918A4624B1A2659E /* Tajawal-Regular.ttf */,
+				776487A4A0C141C4B52D7A37 /* Varela-Regular.ttf */,
+				CAE6C2B4517F41DBBFA5A364 /* cairo.ttf */,
+				2078D54A8D734A3595317921 /* 9squares-AlBoardman.json */,
+				BC0CD4E3D44B49DCA4051FC9 /* HamburgerArrow.json */,
+				66C92FD9A78A431EBC5D5A90 /* LineAnimation.json */,
+				FC5B2E8EBC6D40529BCB7293 /* LottieLogo1.json */,
+				9BC18EBC9B32404EA52727A6 /* LottieLogo2.json */,
+				CDE415BE97DF45369173FD98 /* LottieWalkthrough.json */,
+				D539884B39C249CE88C34696 /* MotionCorpse-Jrcanest.json */,
+				425978491C1743F484C734B3 /* PinJump.json */,
+				EBB318645FA6470CA935D8A2 /* TwitterHeart.json */,
+				98AA0DEBAF8D488C97F43238 /* Watermelon.json */,
+				0EB9EDAAD9DC4CD8878B81CA /* car.json */,
+				328E51E9A5294B8ABC3407F1 /* cart.json */,
+				C449CB5B0137416EBD48B012 /* circle-animation.json */,
+				A1A531C51886489080F2C0B6 /* circle-loading-animation.json */,
+				D10482091868440B9E3375F2 /* empty_cart.json */,
+				44F507EC35664D3AA47F3327 /* empty_shape.json */,
+				B9EAB83F6EF441EE919BEB06 /* expo_loading.json */,
+				FD68E08B7F3748D1AB861AC3 /* offline.json */,
+				5D0977F9A41E44E1AC72AAD5 /* brands.png */,
+				ACF57B808F5D482BB3C428B3 /* home.png */,
+				1071C4694BF846ABB50F483B /* info.png */,
+				90F493A9052C4809AF3980F8 /* user.png */,
+				83338F12FCD34C4DBA542F6A /* bgblue.png */,
+				157B70D5BB5343ED81008901 /* bggray.png */,
+				0A3BD71984A24B1F9AAB7FF7 /* loading.gif */,
+				D7F7B4228ED148EE8C2C63A6 /* loading_sm.gif */,
+				162B1535B19C48F692AA24A2 /* pin.png */,
+				33DA1816A0494F5EBE0116A7 /* pin_old.png */,
+				ABA6E0DED6024E22B66344C8 /* whiteBg.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* calcloanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "calcloanTests" */;
+			buildPhases = (
+				3C7D7C2D6FB925C7F3E7A805 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				BA02DD118C4BFD9C5653EA6C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = calcloanTests;
+			productName = calcloanTests;
+			productReference = 00E356EE1AD99517003FC87E /* calcloanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* calcloan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "calcloan" */;
+			buildPhases = (
+				533254BA5C9A5565486F5B09 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				A1AD1782B26D2CBE9E8FBDD1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = calcloan;
+			productName = calcloan;
+			productReference = 13B07F961A680F5B00A75B9A /* calcloan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* calcloan-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "calcloan-tvOS" */;
+			buildPhases = (
+				ACEB7D8BC8814CF572B39B7C /* [CP] Check Pods Manifest.lock */,
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "calcloan-tvOS";
+			productName = "calcloan-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* calcloan-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* calcloan-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "calcloan-tvOSTests" */;
+			buildPhases = (
+				943752DF62F2B8B3B955B562 /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "calcloan-tvOSTests";
+			productName = "calcloan-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* calcloan-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 8QAQD2K3S3;
+						LastSwiftMigration = 1120;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "calcloan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* calcloan */,
+				00E356ED1AD99517003FC87E /* calcloanTests */,
+				2D02E47A1E0B4A5D006451C7 /* calcloan-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* calcloan-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				248A4FFC76574872B88E82D5 /* AR-Almarai-Font.ttf in Resources */,
+				BACAD68D8DF84FE1AE884045 /* AR-BBC-Regular.ttf in Resources */,
+				67F795A5FDED4E32B660DF02 /* Actor-Regular.ttf in Resources */,
+				C7E1E7650C334A0CBA3FF496 /* AlMohanad.ttf in Resources */,
+				C0587F868C3A401F928D93A6 /* Almarai-Bold.ttf in Resources */,
+				AF1E4BADC8CC48189B4EB33A /* Almarai-ExtraBold.ttf in Resources */,
+				05C91323E15D462582AF8D70 /* Almarai-Light.ttf in Resources */,
+				485FB2310BE34619B8B9A9F7 /* Almarai-Regular.ttf in Resources */,
+				1B84AB7D37C2433DA78D13B1 /* Ar-Ith.ttf in Resources */,
+				5C2449BB693B49E1A9F1ECEA /* ArchivoNarrow-Bold.ttf in Resources */,
+				A83CE3C23AFE46ECBF2D9A90 /* ArchivoNarrow-BoldItalic.ttf in Resources */,
+				939C85441A4841C69A79149D /* ArchivoNarrow-Italic.ttf in Resources */,
+				9FA625C53D524A398FE823F3 /* ArchivoNarrow-Medium.ttf in Resources */,
+				3FE0A30266E94817A978E6F3 /* ArchivoNarrow-MediumItalic.ttf in Resources */,
+				3824F6EA33474624BFB336D9 /* ArchivoNarrow-Regular.ttf in Resources */,
+				9E298CC155904414922055D7 /* ArchivoNarrow-SemiBold.ttf in Resources */,
+				1186E021B2BD43FA942677FE /* ArchivoNarrow-SemiBoldItalic.ttf in Resources */,
+				CBFEDEDEB2714976B9EF0E5F /* Bein-Black.ttf in Resources */,
+				57284C704EB5437F9CE27557 /* Bein-Normal.ttf in Resources */,
+				1552D9642F754462AC9C9D03 /* Cairo-Black.ttf in Resources */,
+				A08FE326B74140CA9B9AB253 /* Cairo-Bold.ttf in Resources */,
+				77E7AED7C1B14C06B6F386CF /* Cairo_Black.ttf in Resources */,
+				4839CAA4150842A5BEA4A5E2 /* Cairo_Semi_Bold.ttf in Resources */,
+				95BA409663E145F5B78FE2EA /* Changa-Bold.ttf in Resources */,
+				65619302E0574070BF7FA974 /* Changa-ExtraBold.ttf in Resources */,
+				5BCF9B9EA2E84FE4A9031B0E /* Changa-ExtraLight.ttf in Resources */,
+				1592558211024841B246500F /* Changa-Light.ttf in Resources */,
+				D6F0DF18C76B4CDBA482D432 /* Changa-Medium.ttf in Resources */,
+				70E006E1EE2A4821973713BE /* Changa-Regular.ttf in Resources */,
+				3027ED90F307455BB39CC02B /* Changa-SemiBold.ttf in Resources */,
+				8D8379119C7045588B1FD381 /* Comfortaa-Bold.ttf in Resources */,
+				812350E187A34909BB30BDE3 /* Comfortaa-Light.ttf in Resources */,
+				A1D10BAF48994B7180E9E4F8 /* Comfortaa-Medium.ttf in Resources */,
+				01649B09E80247DD8A6D9C27 /* Comfortaa-Regular.ttf in Resources */,
+				3BDCFD1F177C4DD0B0930030 /* Comfortaa-SemiBold.ttf in Resources */,
+				426D4348D598495E9BD1CC22 /* Sst-Arabicbold.ttf in Resources */,
+				6C1D90403E134F269084F4E9 /* Tajawal-Black.ttf in Resources */,
+				498C35BA9395482AAE0B8E1A /* Tajawal-Bold.ttf in Resources */,
+				6D875B5A24544D0DBCA2AD75 /* Tajawal-ExtraBold.ttf in Resources */,
+				ACBA58A225664958AB353EF5 /* Tajawal-ExtraLight.ttf in Resources */,
+				9BD8E100BBA6456EA8E79B2E /* Tajawal-Light.ttf in Resources */,
+				B6731A6E447D4D39A2194807 /* Tajawal-Medium.ttf in Resources */,
+				E1B828157E644E538D136AA6 /* Tajawal-Regular.ttf in Resources */,
+				4D3D500C93624AEE8B3A7121 /* Varela-Regular.ttf in Resources */,
+				170E04CE913742C6847DE7E0 /* cairo.ttf in Resources */,
+				F7B71ACE7F454E20B14DD77B /* 9squares-AlBoardman.json in Resources */,
+				8010F0FBAF7143B9AC3FF4E6 /* HamburgerArrow.json in Resources */,
+				5780DDD0F4B243E6BD42E93D /* LineAnimation.json in Resources */,
+				CF0FA4A2E9FE4D5794FF9684 /* LottieLogo1.json in Resources */,
+				D8F092F3038C4482A3061132 /* LottieLogo2.json in Resources */,
+				25EEB25BCA4D405EBB21B4C4 /* LottieWalkthrough.json in Resources */,
+				265C30469FE04A37B190557E /* MotionCorpse-Jrcanest.json in Resources */,
+				79AD86109ED54932B63E2FCF /* PinJump.json in Resources */,
+				F36CF2989E5143BDA34E0491 /* TwitterHeart.json in Resources */,
+				8B38DE1C3D7F48C5ACE19612 /* Watermelon.json in Resources */,
+				112491851829492FBD5CB5F6 /* car.json in Resources */,
+				CDB8CEEA6B044AF7905D4595 /* cart.json in Resources */,
+				28C0320227014BE88889BEED /* circle-animation.json in Resources */,
+				EF11537B14DA4BB7A4F7E474 /* circle-loading-animation.json in Resources */,
+				A434C45D613847AD90EAE479 /* empty_cart.json in Resources */,
+				F87B9FD9D3BC4D2FB19D18CD /* empty_shape.json in Resources */,
+				AEB85CE1880D4F1EBA25404C /* expo_loading.json in Resources */,
+				2E1978907D0040649AD2D61D /* offline.json in Resources */,
+				7FBD66A0184C4D0BAA1587A4 /* brands.png in Resources */,
+				F73660E807734C3A8327AD9C /* home.png in Resources */,
+				B3D4EBDDE2C648109E421E7F /* info.png in Resources */,
+				A8775F68A1B048BA91EC1CF4 /* user.png in Resources */,
+				ECC15CB43A0D40EB8882AFF2 /* bgblue.png in Resources */,
+				4359882CEAF44C9E91CF50DB /* bggray.png in Resources */,
+				B2C880499E0046A38B800EBD /* loading.gif in Resources */,
+				20A8C1AE349C4AC18A43D23D /* loading_sm.gif in Resources */,
+				865A12BF295A4650AE142F99 /* pin.png in Resources */,
+				6895CBC60825428F8668C2BE /* pin_old.png in Resources */,
+				AD6DEE341149425090F6E5B6 /* whiteBg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3C7D7C2D6FB925C7F3E7A805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calcloan-calcloanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		533254BA5C9A5565486F5B09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calcloan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		943752DF62F2B8B3B955B562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calcloan-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1AD1782B26D2CBE9E8FBDD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calcloan/Pods-calcloan-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calcloan/Pods-calcloan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACEB7D8BC8814CF572B39B7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calcloan-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA02DD118C4BFD9C5653EA6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calcloan-calcloanTests/Pods-calcloan-calcloanTests-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calcloan-calcloanTests/Pods-calcloan-calcloanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* calcloanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* calcloanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* calcloan */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* calcloan-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E393B45183194C032FFB394 /* Pods-calcloan-calcloanTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = calcloanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calcloan.app/calcloan";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7F688BF26DD6ED9D87EEF8 /* Pods-calcloan-calcloanTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = calcloanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calcloan.app/calcloan";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3433CAE4BBC8723BDA139E76 /* Pods-calcloan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8QAQD2K3S3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = calcloan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 5.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideasowners.loanappkw;
+				PRODUCT_NAME = calcloan;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BEAC07FCD877B52F4ADEB27 /* Pods-calcloan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8QAQD2K3S3;
+				INFOPLIST_FILE = calcloan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 5.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideasowners.loanappkw;
+				PRODUCT_NAME = calcloan;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033ED8BFE5BA8ADC93DE19C1 /* Pods-calcloan-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "calcloan-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.calcloan-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301C9C8EC730E1ABB8663B39 /* Pods-calcloan-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "calcloan-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.calcloan-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CFECE45D6C1E98C639C38E5 /* Pods-calcloan-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "calcloan-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.calcloan-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calcloan-tvOS.app/calcloan-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5D6825D2F989DACF3101AF /* Pods-calcloan-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "calcloan-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.calcloan-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calcloan-tvOS.app/calcloan-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "calcloanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "calcloan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "calcloan-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "calcloan-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "calcloan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

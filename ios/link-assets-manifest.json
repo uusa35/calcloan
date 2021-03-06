@@ -1,0 +1,301 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/animations/9squares-AlBoardman.json",
+      "sha1": "6547ba6b9064e8360ab269b64ce229750a74dcbd"
+    },
+    {
+      "path": "assets/animations/HamburgerArrow.json",
+      "sha1": "562c04ec3ac4d2d5de521ea37143057da2deadc0"
+    },
+    {
+      "path": "assets/animations/LineAnimation.json",
+      "sha1": "04ebb54c2e7fe3a51f291a038582b2a2d3e728f7"
+    },
+    {
+      "path": "assets/animations/LottieLogo1.json",
+      "sha1": "fccef14a60b9850cf23b0b7278f84eedfac511dd"
+    },
+    {
+      "path": "assets/animations/LottieLogo2.json",
+      "sha1": "e22029dd7fa224991c7fb6b7b6efdacb05c6977e"
+    },
+    {
+      "path": "assets/animations/LottieWalkthrough.json",
+      "sha1": "d95132f67d1aa98c4f4137746a39756a5c996d36"
+    },
+    {
+      "path": "assets/animations/MotionCorpse-Jrcanest.json",
+      "sha1": "b02bbb6534cd1e943039ea9c90b9a114bd55b5fc"
+    },
+    {
+      "path": "assets/animations/PinJump.json",
+      "sha1": "63b7b5905b2c05a5f727bdd9036e7e28d69b8494"
+    },
+    {
+      "path": "assets/animations/TwitterHeart.json",
+      "sha1": "859a33a4571d5d82cb4799f245dc56e1606f6fa1"
+    },
+    {
+      "path": "assets/animations/Watermelon.json",
+      "sha1": "e71eabf0bc79575c8ef669fde817955b043d1205"
+    },
+    {
+      "path": "assets/animations/car.json",
+      "sha1": "ea3553b474742486ece010a72f48721682272585"
+    },
+    {
+      "path": "assets/animations/cart.json",
+      "sha1": "94cfad4e89a9fbdf167af32f48ff892e3fd1044b"
+    },
+    {
+      "path": "assets/animations/circle-animation.json",
+      "sha1": "f17c47aa77aa86c217d05a495f355bc6dca02015"
+    },
+    {
+      "path": "assets/animations/circle-loading-animation.json",
+      "sha1": "7f8c7a1c7e9f9082b6df52b72fc0b088217beb2d"
+    },
+    {
+      "path": "assets/animations/empty_cart.json",
+      "sha1": "836d8d8c7cbbd52f5c7d28dc99bb1d63bb00803e"
+    },
+    {
+      "path": "assets/animations/empty_shape.json",
+      "sha1": "2d43829327b18bfbfd4410ba9ac6573dca8ee37a"
+    },
+    {
+      "path": "assets/animations/expo_loading.json",
+      "sha1": "d231bbab85df23ffe261fb90efdfbacc0a00e827"
+    },
+    {
+      "path": "assets/animations/offline.json",
+      "sha1": "544910cbbee219182ae37f166454c3bfa9c7fb0d"
+    },
+    {
+      "path": "assets/fonts/AR-Almarai-Font.ttf",
+      "sha1": "2b2f8db8552c94d5887343b2730d237056b925fc"
+    },
+    {
+      "path": "assets/fonts/AR-BBC-Regular.ttf",
+      "sha1": "597aa8416f4592aebc6782108a071fa0becf40db"
+    },
+    {
+      "path": "assets/fonts/Actor-Regular.ttf",
+      "sha1": "a8649b0e1bf84f32c314cec0be6456ca48dd687b"
+    },
+    {
+      "path": "assets/fonts/AlMohanad.ttf",
+      "sha1": "6df39ad4a339f363d2d14f45b72b984dfb45e157"
+    },
+    {
+      "path": "assets/fonts/Almarai-Bold.ttf",
+      "sha1": "91e36b6ef56ff61b29ddc8ff9a57ee1b0cb84cd2"
+    },
+    {
+      "path": "assets/fonts/Almarai-ExtraBold.ttf",
+      "sha1": "69480abe0a93c6cb38f9207ff898d9413b33fca2"
+    },
+    {
+      "path": "assets/fonts/Almarai-Light.ttf",
+      "sha1": "d049e0f333f3045991cb49ad0816b5f253249e52"
+    },
+    {
+      "path": "assets/fonts/Almarai-Regular.ttf",
+      "sha1": "072a431232b97e251e354a24e741e15b2024e913"
+    },
+    {
+      "path": "assets/fonts/Ar-Ith.ttf",
+      "sha1": "7a2ebb8dcbb05b935fedce03ac371b6321601a2d"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-Bold.ttf",
+      "sha1": "4f28b758aa0f23c0420b3e184463c04704459ff8"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-BoldItalic.ttf",
+      "sha1": "bc710cd65a9b892760357a9b9a436f3c46caaf0f"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-Italic.ttf",
+      "sha1": "810089a59465b493364ea50156096056d2a69547"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-Medium.ttf",
+      "sha1": "370bbbba574e33377187796f1af88cf87796dd27"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-MediumItalic.ttf",
+      "sha1": "daed5f3a72bfc76abd26eba795e6c76472d1159f"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-Regular.ttf",
+      "sha1": "a318a7a4beec12e09558def7e622a20807451fac"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-SemiBold.ttf",
+      "sha1": "95775688d82406d6e7fad57118e4eaf15aaa1416"
+    },
+    {
+      "path": "assets/fonts/ArchivoNarrow-SemiBoldItalic.ttf",
+      "sha1": "64e6251011da083f2282f2a82f7a01f4185db19c"
+    },
+    {
+      "path": "assets/fonts/Bein-Black.ttf",
+      "sha1": "d507481e512d28a1072934e5f35d886657036943"
+    },
+    {
+      "path": "assets/fonts/Bein-Normal.ttf",
+      "sha1": "611eda46029c4c097393a8d71ca86ff0d0ccd7cd"
+    },
+    {
+      "path": "assets/fonts/Cairo-Black.ttf",
+      "sha1": "9a1a828f6bdd39f8446b2a4b1e46f65ccf724bc9"
+    },
+    {
+      "path": "assets/fonts/Cairo-Bold.ttf",
+      "sha1": "8da8ad0f30e208b46ae0409c519a9ea61a70f694"
+    },
+    {
+      "path": "assets/fonts/Cairo_Black.ttf",
+      "sha1": "9a1a828f6bdd39f8446b2a4b1e46f65ccf724bc9"
+    },
+    {
+      "path": "assets/fonts/Cairo_Semi_Bold.ttf",
+      "sha1": "775ca60f44bcf9369b75a542acfcf58d4e5fa5d2"
+    },
+    {
+      "path": "assets/fonts/Changa-Bold.ttf",
+      "sha1": "56c6e4c59f2c2881c54dd69c2b9619f2ad9e2eec"
+    },
+    {
+      "path": "assets/fonts/Changa-ExtraBold.ttf",
+      "sha1": "5194052de6493e5c2618536b45508f36d57ffc10"
+    },
+    {
+      "path": "assets/fonts/Changa-ExtraLight.ttf",
+      "sha1": "630b7884e651b66dfeb861d7f86146d4a629a9b1"
+    },
+    {
+      "path": "assets/fonts/Changa-Light.ttf",
+      "sha1": "67fbe9cbdc0d9d852e2c2f5b5fed188b8600f7d8"
+    },
+    {
+      "path": "assets/fonts/Changa-Medium.ttf",
+      "sha1": "bd70603cbd12569a83aa63b798f01870c9796a6f"
+    },
+    {
+      "path": "assets/fonts/Changa-Regular.ttf",
+      "sha1": "30dba9eaf7afca4b40fe61e6f2720b0d0f222913"
+    },
+    {
+      "path": "assets/fonts/Changa-SemiBold.ttf",
+      "sha1": "a7d42bd55bc95d6302f080f064dee0d6e61462dd"
+    },
+    {
+      "path": "assets/fonts/Comfortaa-Bold.ttf",
+      "sha1": "e7268b6d7cc37d762d6082689ae61d7ad89f0cdf"
+    },
+    {
+      "path": "assets/fonts/Comfortaa-Light.ttf",
+      "sha1": "42cebb6dc3dad7ce8ff714eb4c822891371de09a"
+    },
+    {
+      "path": "assets/fonts/Comfortaa-Medium.ttf",
+      "sha1": "9b1d9d3a145657e3b7cb21a2354dd3e8e3a9dd72"
+    },
+    {
+      "path": "assets/fonts/Comfortaa-Regular.ttf",
+      "sha1": "2707dea0399fe22c4dd5814db399cddf14a7de2c"
+    },
+    {
+      "path": "assets/fonts/Comfortaa-SemiBold.ttf",
+      "sha1": "3906425c3caf64aa15ee1ce5575672d5e32932a9"
+    },
+    {
+      "path": "assets/fonts/Sst-Arabicbold.ttf",
+      "sha1": "5f4069260d5d694d859577313cdd2cc286d35ead"
+    },
+    {
+      "path": "assets/fonts/Tajawal-Black.ttf",
+      "sha1": "ee4e49edd045a905d40671d48b35cbce15ccb330"
+    },
+    {
+      "path": "assets/fonts/Tajawal-Bold.ttf",
+      "sha1": "b8b9548ff8e7cdd05b4817cbe02d1e16038dc1fb"
+    },
+    {
+      "path": "assets/fonts/Tajawal-ExtraBold.ttf",
+      "sha1": "d6c1ebe299291bf34873e6b178e9e235a8449586"
+    },
+    {
+      "path": "assets/fonts/Tajawal-ExtraLight.ttf",
+      "sha1": "ae21cbb0c664b30d3f18a75a66061520f3ae6fa0"
+    },
+    {
+      "path": "assets/fonts/Tajawal-Light.ttf",
+      "sha1": "0f5a743dd70c7b818c7d5cd01af46d9099fcb132"
+    },
+    {
+      "path": "assets/fonts/Tajawal-Medium.ttf",
+      "sha1": "18fecab4a7d562e918df5991bcdd1cdcaf27688e"
+    },
+    {
+      "path": "assets/fonts/Tajawal-Regular.ttf",
+      "sha1": "f3c4f85dad20e30f20878022d0a26568555b7f97"
+    },
+    {
+      "path": "assets/fonts/Varela-Regular.ttf",
+      "sha1": "4c1336839e046d91ec6bb011bd9a76ce42b5c632"
+    },
+    {
+      "path": "assets/fonts/cairo.ttf",
+      "sha1": "775ca60f44bcf9369b75a542acfcf58d4e5fa5d2"
+    },
+    {
+      "path": "assets/icons/brands.png",
+      "sha1": "a7be950b2aa0ad71788825446f9b30160ad87ff6"
+    },
+    {
+      "path": "assets/icons/home.png",
+      "sha1": "ce537814fd076321bb386b72d3e0bb848d232506"
+    },
+    {
+      "path": "assets/icons/info.png",
+      "sha1": "33fd1e4edb9439299491e67abf9f1e7ac0aec1f6"
+    },
+    {
+      "path": "assets/icons/user.png",
+      "sha1": "b4a525a911a041f0f153b755b58a4c76f048cbd1"
+    },
+    {
+      "path": "assets/images/bgblue.png",
+      "sha1": "3aa85a3229118549aee0ab01d2853cea13145874"
+    },
+    {
+      "path": "assets/images/bggray.png",
+      "sha1": "d0ae8dbca0d7f4448baf1d390e0a38cb88f8d07b"
+    },
+    {
+      "path": "assets/images/loading.gif",
+      "sha1": "ef6f39c95e1c6faf33baa964d9a902d8d7bac75f"
+    },
+    {
+      "path": "assets/images/loading_sm.gif",
+      "sha1": "054d85e94da90ddab6374b6758286e2448b28f95"
+    },
+    {
+      "path": "assets/images/pin.png",
+      "sha1": "eb837c2fefecb284ec60455c373253103a931469"
+    },
+    {
+      "path": "assets/images/pin_old.png",
+      "sha1": "8086c5f22c2bc7380ed0baa654f3702d26eeb96d"
+    },
+    {
+      "path": "assets/images/whiteBg.png",
+      "sha1": "4a50c774e825278cdd7666221348235b2e314e53"
+    }
+  ]
+}

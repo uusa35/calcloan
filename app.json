@@ -1,0 +1,16 @@
+{
+  "name": "calcloan",
+  "displayName": "calcloan",
+  "FIRST_AR_FONT" : "Almarai-Regular",
+  "SECOND_AR_FONT" : "AlMohanad",
+  "THIRD_AR_FONT" : "Bein-Black",
+  "FORTH_AR_FONT" : "Changa-Medium",
+  "FIFTH_AR_FONT" : "Varela-Regular",
+  "SIXTH_AR_FONT" : "Sst-Arabicbold",
+  "SEVENTH_AR_FONT" : "Tajawal-Regular",
+  "FIRST_EN_FONT" : "ArchivoNarrow-Regular",
+  "SECOND_EN_FONT" : "Varela-Regular",
+  "THIRD_EN_FONT" : "Actor-Regular",
+  "FORTH_EN_FONT" : "Ar-Ith",
+  "FIFTH_EN_FONT" : "Tajawal-Regular"
+}

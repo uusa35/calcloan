@@ -1,0 +1,43 @@
+{
+  "name": "calcloan",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "prettier": "prettier --write --no-bracket-spacing --single-quote --jsx-bracket-same-line --print-width 80 '**/**/**/*.js'",
+    "full-upgrade": "yarn upgrade && npx jetify && cd android && ./gradlew clean && cd .. && cd ios && pod repo update && pod install && pod update"
+  },
+  "dependencies": {
+    "@exponent/react-native-action-sheet": "^0.3.0",
+    "lodash": "^4.17.21",
+    "prettier": "^2.2.1",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-action-sheet": "^2.2.0",
+    "react-native-actions-sheet": "^0.4.2",
+    "react-native-actionsheet": "^2.4.2",
+    "react-native-code-push": "^7.0.0",
+    "react-native-elements": "^3.2.0",
+    "react-native-enhanced-actionsheet": "^1.4.0",
+    "react-native-flipper": "^0.76.0",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-vector-icons": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
