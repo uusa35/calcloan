@@ -1,5 +1,4 @@
-import React, {useMemo, useState, useEffect, createRef} from 'react';
-import Actionsheet from 'react-native-enhanced-actionsheet';
+import React, {useMemo, useState, useEffect} from 'react';
 import {
   View,
   Text,
@@ -14,59 +13,123 @@ import codePush from 'react-native-code-push';
 import {colors, text, width, height, trans, iconSizes} from './constants';
 import {Icon, Input} from 'react-native-elements';
 import LoanInstallmentTypeActionSheet from './LoanInstallmentTypeActionSheet';
-import {parseArabicChar} from './helpers';
+import {numberWithCommas, parseArabicChar, toDecimalPlace} from './helpers';
 import LoanPeriodTypeActionSheet from './LoanPeriodTypeActionSheet';
-
-const one = createRef();
-const tow = createRef();
-
-let COUNT = 0;
-const OPTIONS = [
-  {id: COUNT++, label: 'option #' + COUNT},
-  {id: COUNT++, label: 'option #' + COUNT},
-];
+import {isEmpty, isNull, first, filter, last} from 'lodash';
 
 const App = () => {
-  const [loanAmount, setloanAmount] = useState('');
+  const [loanAmount, setLoanAmount] = useState('');
   const [interestRate, setInterestRate] = useState('');
   const [loanPeriod, setLoanPeriod] = useState('');
-  const [loanTerm, setloanTerm] = useState('');
-
-  const [amountPayable, setamountPayable] = useState('');
-  const [interestAmount, setinterestAmount] = useState('');
-  const [loan, setloan] = useState('');
-  const [showResults, setshowResults] = useState(false);
-  const [iterator, setiterator] = useState('');
+  const [interestAmount, setInterestAmount] = useState(null);
+  const [totalInterestRate, setTotalInterestRate] = useState(null);
+  const [amountPayable, setAmountPayable] = useState(null);
+  const [installment, setInstallment] = useState(null); // --> loan
+  const [showResults, setShowResults] = useState(false);
+  const [isReady, setIsReady] = useState(false);
 
   const [periodTypeVisible, setPeriodTypeVisible] = useState(false);
   const [periodTypeSelected, setPeriodTypeSelected] = useState(null);
   const [periodTypeOptions, setPeriodTypeOptions] = useState([
-    {id: 0, label: trans.MONTH},
-    {id: 1, label: trans.YEAR},
+    {id: 0, label: trans.MONTH, value: 'MONTH'},
+    {id: 1, label: trans.YEAR, value: 'YEAR'},
   ]);
 
   const [installmentTypeVisible, setInstallmentTypeVisible] = useState(false);
   const [installmentTypeSelected, setInstallmentTypeSelected] = useState(null);
   const [installmentTypeOptions, setInstallmentTypeOptions] = useState([
-    {id: 0, label: trans.YEARLY},
-    {id: 1, label: trans.BI_ANNUALLY},
-    {id: 2, label: trans.QUARTERLY},
-    {id: 3, label: trans.MONTHLY},
+    {id: 0, label: trans.YEARLY, yearToPeriod: 1, yearToMonth: 12},
+    {id: 1, label: trans.BI_ANNUALLY, yearToPeriod: 2, yearToMonth: 6},
+    {id: 2, label: trans.QUARTERLY, yearToPeriod: 4, yearToMonth: 3},
+    {id: 3, label: trans.MONTHLY, yearToPeriod: 12, yearToMonth: 1},
   ]);
 
-  console.log('loanAmount', loanAmount);
-  console.log('interestRate', interestRate);
-  console.log('loanPeriod', loanPeriod);
-  console.log('periodTypeSelected', periodTypeSelected);
-  console.log('installmentTypeSelected', installmentTypeSelected);
+  useMemo(() => {
+    if (
+      !isNull(periodTypeSelected) &&
+      periodTypeSelected.id &&
+      !isNull(loanPeriod)
+    ) {
+      if (periodTypeSelected.value === 'MONTH') {
+        setInstallmentTypeOptions(
+          filter(installmentTypeOptions, (o) => o.yearToMonth <= loanPeriod),
+        );
+      } else {
+        if (loanPeriod <= 1) {
+          setInstallmentTypeOptions(
+            filter(installmentTypeOptions, (o) => o.yearToPeriod > loanPeriod),
+          );
+        } else {
+          setInstallmentTypeOptions(installmentTypeOptions);
+        }
+      }
+    }
+  }, [periodTypeSelected, loanPeriod]);
+
+  useMemo(() => {
+    setPeriodTypeSelected(last(periodTypeOptions));
+    setInstallmentTypeSelected(last(installmentTypeOptions));
+  }, []);
 
   const reset = () => {
-    setloanAmount('');
+    setLoanAmount('');
     setInterestRate('');
     setLoanPeriod('');
     setPeriodTypeSelected(null);
     setInstallmentTypeSelected(null);
+    setShowResults(false);
+    setIsReady(false);
   };
+
+  useMemo(() => {
+    if (
+      !isNull(loanAmount) &&
+      !isNull(interestRate) &&
+      !isNull(loanPeriod) &&
+      !isNull(periodTypeSelected) &&
+      !isNull(installmentTypeSelected)
+    ) {
+      setIsReady(true);
+    } else {
+      setIsReady(false);
+    }
+  }, [
+    loanAmount,
+    interestRate,
+    loanPeriod,
+    periodTypeSelected,
+    installmentTypeSelected,
+  ]);
+
+  const calculate = () => {
+    if (isReady) {
+      setShowResults(true);
+      if (interestRate == 0) {
+        setAmountPayable(numberWithCommas(loanAmount));
+        setInterestAmount(0);
+        setTotalInterestRate(0);
+      } else {
+        const percentageInterestRate = interestRate / 100;
+        const J = percentageInterestRate / installmentTypeSelected.yearToPeriod;
+        const n =
+          periodTypeSelected.value === 'MONTH'
+            ? loanPeriod / installmentTypeSelected.yearToMonth
+            : loanPeriod * installmentTypeSelected.yearToPeriod;
+        const B = 1 - 1 / Math.pow(1 + J, n);
+        const payable = Math.round(loanAmount * (J / B) * n);
+        setAmountPayable(numberWithCommas(payable));
+        const intAmount = toDecimalPlace(payable - loanAmount);
+        setTotalInterestRate(
+          ((parseFloat(intAmount) / loanAmount) * 100).toFixed(2),
+        );
+        setInterestAmount(numberWithCommas(intAmount));
+        setInstallment(numberWithCommas(toDecimalPlace(payable / n)));
+      }
+    } else {
+      setShowResults(false);
+    }
+  };
+
   return (
     <SafeAreaView
       style={{
@@ -100,9 +163,11 @@ const App = () => {
             inputStyle={styles.inputStyle}
             label={trans.loanAmount}
             labelStyle={[styles.titleLabelStyle]}
+            value={loanAmount}
+            textContentType={'telephoneNumber'}
             shake={true}
             keyboardType="numeric"
-            onChangeText={(text) => setloanAmount(parseArabicChar(text))}
+            onChangeText={(text) => setLoanAmount(parseArabicChar(text))}
             leftIcon={() => (
               <Icon
                 name="account-cash"
@@ -117,6 +182,8 @@ const App = () => {
             inputStyle={styles.inputStyle}
             label={trans.interestRate}
             labelStyle={[styles.titleLabelStyle]}
+            value={interestRate}
+            textContentType={'telephoneNumber'}
             shake={true}
             keyboardType="numeric"
             onChangeText={(text) => setInterestRate(parseArabicChar(text))}
@@ -134,6 +201,8 @@ const App = () => {
             inputStyle={styles.inputStyle}
             label={trans.loanPeriod}
             labelStyle={[styles.titleLabelStyle]}
+            value={loanPeriod}
+            textContentType={'telephoneNumber'}
             shake={true}
             keyboardType="numeric"
             onChangeText={(text) => setLoanPeriod(parseArabicChar(text))}
@@ -202,7 +271,6 @@ const App = () => {
               </Text>
             </TouchableOpacity>
           </View>
-
           <View
             style={{
               flexDirection: 'row',
@@ -215,13 +283,16 @@ const App = () => {
               alignItems: 'center',
             }}>
             <TouchableOpacity
-              disabled={!showResults}
+              disabled={!isReady}
+              onPress={() => calculate()}
               style={{
                 flex: 0.4,
-                borderRadius: 5,
+                borderRadius: 3,
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundColor: !showResults ? 'grey' : colors.main,
+                backgroundColor: !isReady ? 'grey' : colors.main,
+                borderWidth: 0.5,
+                borderColor: 'lightgrey',
                 padding: 20,
               }}>
               <Text style={[styles.normalText, {fontSize: text.medium}]}>
@@ -232,15 +303,24 @@ const App = () => {
               onPress={() => reset()}
               style={{
                 flex: 0.4,
-                borderRadius: 5,
-                justifyContent: 'center',
+                borderRadius: 3,
+                justifyContent: 'space-evenly',
                 alignItems: 'center',
+                borderWidth: 0.5,
+                borderColor: 'lightgrey',
                 backgroundColor: colors.main,
+                flexDirection: 'row',
                 padding: 20,
               }}>
               <Text style={[styles.normalText, {fontSize: text.medium}]}>
                 {trans.reset}
               </Text>
+              <Icon
+                name="repeat"
+                type="font-awesome"
+                color="white"
+                size={iconSizes.smallest}
+              />
             </TouchableOpacity>
           </View>
 
@@ -269,8 +349,9 @@ const App = () => {
                 <View style={{flex: 0.4}}>
                   <Text style={styles.normalText}>{trans.installment}</Text>
                 </View>
-                <View style={{flex: 0.6}}>
-                  <Text style={styles.normalText}> {`  123.456  `}:</Text>
+                <View style={{flex: 0.6, flexDirection: 'row'}}>
+                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={styles.normalText}>{installment}</Text>
                 </View>
               </View>
 
@@ -287,8 +368,9 @@ const App = () => {
                 <View style={{flex: 0.4}}>
                   <Text style={[styles.normalText]}>{trans.interest}</Text>
                 </View>
-                <View style={{flex: 0.6}}>
-                  <Text style={styles.normalText}> {`  123.456  `}:</Text>
+                <View style={{flex: 0.6, flexDirection: 'row'}}>
+                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={styles.normalText}>{interestAmount}</Text>
                 </View>
               </View>
 
@@ -305,8 +387,9 @@ const App = () => {
                 <View style={{flex: 0.4}}>
                   <Text style={[styles.normalText]}>{trans.amountPayable}</Text>
                 </View>
-                <View style={{flex: 0.6}}>
-                  <Text style={styles.normalText}> {`  123.456  `}:</Text>
+                <View style={{flex: 0.6, flexDirection: 'row'}}>
+                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={styles.normalText}>{amountPayable}</Text>
                 </View>
               </View>
 
@@ -323,8 +406,9 @@ const App = () => {
                 <View style={{flex: 0.4}}>
                   <Text style={[styles.normalText]}>{trans.realInterest}</Text>
                 </View>
-                <View style={{flex: 0.6}}>
-                  <Text style={styles.normalText}> {`  123.456  `}:</Text>
+                <View style={{flex: 0.6, flexDirection: 'row'}}>
+                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={styles.normalText}>% {totalInterestRate}</Text>
                 </View>
               </View>
             </View>
