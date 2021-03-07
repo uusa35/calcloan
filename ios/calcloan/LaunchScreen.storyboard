@@ -27,15 +27,21 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2nu-J0-CXy"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Jzm-pH-bFs"/>
                             <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="P7i-v5-XTY"/>
                             <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Pr4-Tr-lJL"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bHx-Cb-FJg"/>
                             <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bpC-8N-pDe"/>
                             <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iof-GJ-og0"/>
+                            <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mBg-R3-guy"/>
+                            <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sF2-MR-dij"/>
+                            <constraint firstItem="DBt-G1-Y7L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xb4-EA-LCr"/>
                         </constraints>
                     </view>
                 </viewController>

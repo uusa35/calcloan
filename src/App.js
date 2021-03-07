@@ -15,7 +15,8 @@ import {Icon, Input} from 'react-native-elements';
 import LoanInstallmentTypeActionSheet from './LoanInstallmentTypeActionSheet';
 import {numberWithCommas, parseArabicChar, toDecimalPlace} from './helpers';
 import LoanPeriodTypeActionSheet from './LoanPeriodTypeActionSheet';
-import {isEmpty, isNull, first, filter, last} from 'lodash';
+import {isNull, filter, last, isEmpty} from 'lodash';
+import {isNumeric} from 'lodash-contrib';
 
 const App = () => {
   const [loanAmount, setLoanAmount] = useState('');
@@ -64,6 +65,7 @@ const App = () => {
         }
       }
     }
+    setInstallmentTypeSelected(last(installmentTypeOptions));
   }, [periodTypeSelected, loanPeriod]);
 
   useMemo(() => {
@@ -83,11 +85,14 @@ const App = () => {
 
   useMemo(() => {
     if (
-      !isNull(loanAmount) &&
-      !isNull(interestRate) &&
-      !isNull(loanPeriod) &&
-      !isNull(periodTypeSelected) &&
-      !isNull(installmentTypeSelected)
+      isNumeric(loanAmount) &&
+      loanAmount > 0 &&
+      isNumeric(interestRate) &&
+      interestRate > 0 &&
+      isNumeric(loanPeriod) &&
+      loanPeriod > 0 &&
+      !isEmpty(periodTypeSelected) &&
+      !isEmpty(installmentTypeSelected)
     ) {
       setIsReady(true);
     } else {
@@ -154,7 +159,7 @@ const App = () => {
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}>
         <KeyboardAvoidingView
-          behavior={'height'}
+          behavior={'padding'}
           keyboardVerticalOffset={iconSizes.huge}
           style={{}}>
           <Input
@@ -173,6 +178,7 @@ const App = () => {
                 name="account-cash"
                 type="material-community"
                 size={iconSizes.smaller}
+                color={colors.main}
               />
             )}
           />
@@ -192,6 +198,7 @@ const App = () => {
                 name="percent"
                 type="material-community"
                 size={iconSizes.smaller}
+                color={colors.main}
               />
             )}
           />
@@ -211,6 +218,7 @@ const App = () => {
                 name="cash-register"
                 type="font-awesome-5"
                 size={iconSizes.smaller}
+                color={colors.main}
               />
             )}
             rightIcon={() => (
@@ -229,6 +237,7 @@ const App = () => {
                   name="calendar-clock"
                   type="material-community"
                   size={iconSizes.smaller}
+                  color={colors.main}
                 />
                 <Text style={{fontFamily: text.font, paddingLeft: 10}}>
                   {periodTypeSelected
@@ -258,6 +267,7 @@ const App = () => {
                 name="cash-remove"
                 type="material-community"
                 size={iconSizes.smaller}
+                color={colors.main}
               />
               <Text
                 style={{
@@ -265,7 +275,7 @@ const App = () => {
                   fontSize: text.large,
                   paddingLeft: 15,
                 }}>
-                {installmentTypeSelected
+                {!isEmpty(installmentTypeSelected)
                   ? installmentTypeSelected.label
                   : trans.installmentType}
               </Text>
