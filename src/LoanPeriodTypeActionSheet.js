@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {ActionSheetCustom as ActionSheet} from 'react-native-actionsheet';
 import Actionsheet from 'react-native-enhanced-actionsheet';
 import {colors, text} from './constants';
 

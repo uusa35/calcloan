@@ -19,9 +19,9 @@ import {isNull, filter, last, isEmpty} from 'lodash';
 import {isNumeric} from 'lodash-contrib';
 
 const App = () => {
-  const [loanAmount, setLoanAmount] = useState('');
-  const [interestRate, setInterestRate] = useState('');
-  const [loanPeriod, setLoanPeriod] = useState('');
+  const [loanAmount, setLoanAmount] = useState(1000);
+  const [interestRate, setInterestRate] = useState(10);
+  const [loanPeriod, setLoanPeriod] = useState(1);
   const [interestAmount, setInterestAmount] = useState(null);
   const [totalInterestRate, setTotalInterestRate] = useState(null);
   const [amountPayable, setAmountPayable] = useState(null);
@@ -121,12 +121,10 @@ const App = () => {
             ? loanPeriod / installmentTypeSelected.yearToMonth
             : loanPeriod * installmentTypeSelected.yearToPeriod;
         const B = 1 - 1 / Math.pow(1 + J, n);
-        const payable = Math.round(loanAmount * (J / B) * n);
+        const payable = parseFloat(loanAmount * (J / B) * n).toFixed(2);
         setAmountPayable(numberWithCommas(payable));
         const intAmount = toDecimalPlace(payable - loanAmount);
-        setTotalInterestRate(
-          ((parseFloat(intAmount) / loanAmount) * 100).toFixed(2),
-        );
+        setTotalInterestRate((parseFloat(intAmount) / loanAmount) * 100);
         setInterestAmount(numberWithCommas(intAmount));
         setInstallment(numberWithCommas(toDecimalPlace(payable / n)));
       }
@@ -139,11 +137,11 @@ const App = () => {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: '#1b1b1b',
       }}>
       <StatusBar
         animated={true}
-        backgroundColor="#61dafb"
+        backgroundColor="#284d43"
         barStyle={'light-content'}
       />
       <ScrollView
@@ -173,14 +171,6 @@ const App = () => {
             shake={true}
             keyboardType="numeric"
             onChangeText={(text) => setLoanAmount(parseArabicChar(text))}
-            leftIcon={() => (
-              <Icon
-                name="account-cash"
-                type="material-community"
-                size={iconSizes.smaller}
-                color={colors.main}
-              />
-            )}
           />
           <Input
             placeholder={trans.interestRate}
@@ -193,15 +183,7 @@ const App = () => {
             shake={true}
             keyboardType="numeric"
             onChangeText={(text) => setInterestRate(parseArabicChar(text))}
-            leftIcon={() => (
-              <Icon
-                name="percent"
-                type="material-community"
-                size={iconSizes.smaller}
-                color={colors.main}
-              />
-            )}
-          />
+            />
           <Input
             placeholder={trans.loanPeriod}
             inputContainerStyle={[styles.inputContainerStyle]}
@@ -213,14 +195,6 @@ const App = () => {
             shake={true}
             keyboardType="numeric"
             onChangeText={(text) => setLoanPeriod(parseArabicChar(text))}
-            leftIcon={() => (
-              <Icon
-                name="cash-register"
-                type="font-awesome-5"
-                size={iconSizes.smaller}
-                color={colors.main}
-              />
-            )}
             rightIcon={() => (
               <TouchableOpacity
                 onPress={() => {
@@ -232,14 +206,10 @@ const App = () => {
                   alignItems: 'center',
                   padding: 5,
                   width: 100,
+                    borderLeftWidth : 1,
+                    borderLeftColor : colors.mainLight
                 }}>
-                <Icon
-                  name="calendar-clock"
-                  type="material-community"
-                  size={iconSizes.smaller}
-                  color={colors.main}
-                />
-                <Text style={{fontFamily: text.font, paddingLeft: 10}}>
+                <Text style={{paddingLeft: 10, color : colors.white, fontSize : text.large}}>
                   {periodTypeSelected
                     ? periodTypeSelected.label
                     : trans.periodType}
@@ -253,26 +223,22 @@ const App = () => {
             <TouchableOpacity
               style={{
                 flexDirection: 'row',
-                backgroundColor: 'white',
+                backgroundColor: 'transparent',
+                  borderWidth : 0.8,
+                  borderColor : colors.mainLight,
                 flex: 1,
                 height: 50,
-                paddingLeft: 20,
+                // paddingLeft: 20,
                 justifyContent: 'flex-start',
                 alignItems: 'center',
               }}
               onPress={() => {
                 setInstallmentTypeVisible(!installmentTypeVisible);
               }}>
-              <Icon
-                name="cash-remove"
-                type="material-community"
-                size={iconSizes.smaller}
-                color={colors.main}
-              />
               <Text
                 style={{
-                  fontFamily: text.font,
                   fontSize: text.large,
+                    color : colors.mainLight,
                   paddingLeft: 15,
                 }}>
                 {!isEmpty(installmentTypeSelected)
@@ -296,8 +262,8 @@ const App = () => {
               disabled={!isReady}
               onPress={() => calculate()}
               style={{
-                flex: 0.4,
-                borderRadius: 3,
+                flex: 0.45,
+                  borderRadius: 60,
                 justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: !isReady ? 'grey' : colors.main,
@@ -312,8 +278,8 @@ const App = () => {
             <TouchableOpacity
               onPress={() => reset()}
               style={{
-                flex: 0.4,
-                borderRadius: 3,
+                flex: 0.45,
+                borderRadius: 60,
                 justifyContent: 'space-evenly',
                 alignItems: 'center',
                 borderWidth: 0.5,
@@ -451,33 +417,33 @@ export default codePush({
 
 const styles = StyleSheet.create({
   inputStyle: {
-    fontFamily: text.font,
+    // fontFamily: text.font,
     textAlign: 'right',
     height: 50,
-    color: colors.black,
-    paddingLeft: 20,
+    color: colors.white,
+    // paddingLeft: 20,
   },
   inputContainerStyle: {
     borderWidth: 1,
-    borderColor: 'lightgrey',
+    borderColor: colors.mainLight,
     borderRadius: 2,
     paddingLeft: 15,
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     textAlign: 'left',
   },
   titleLabelStyle: {
-    fontFamily: text.font,
+    // fontFamily: text.font,
     fontSize: text.medium,
     paddingRight: 10,
     textAlign: 'left',
     paddingBottom: 10,
-    color: colors.white,
+    color: colors.mainLight,
     fontWeight: 'bold',
   },
   normalText: {
-    fontFamily: text.font,
+    // fontFamily: text.font,
     fontSize: text.large,
     textAlign: 'left',
     color: colors.white,

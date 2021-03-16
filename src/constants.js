@@ -3,7 +3,8 @@ import {Dimensions} from 'react-native';
 import {FIRST_AR_FONT} from './../app.json';
 
 export const colors = {
-  main: '#0e916a',
+  main: '#285045',
+  mainLight: '#536565',
   black: 'black',
   white: 'white',
 };
