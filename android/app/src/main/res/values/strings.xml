@@ -1,4 +1,4 @@
 <resources>
-    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">VoOPTSDBy9RLl86pXs6GnwLhmEUgQ8QnTrIlpO</string>
-    <string name="app_name">LoanApp</string>
+    <string name="CodePushDeploymentKey" moduleConfig="true" translatable="false">VoOPTSDBy9RLl86pXs6GnwLhmEUgQ8QnTrIlpO</string>
+    <string name="app_name">احسب قرضك</string>
 </resources>

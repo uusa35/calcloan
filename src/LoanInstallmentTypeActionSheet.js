@@ -1,8 +1,7 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import {ActionSheetCustom as ActionSheet} from 'react-native-actionsheet';
+import {StyleSheet} from 'react-native';
 import Actionsheet from 'react-native-enhanced-actionsheet';
-import {colors, text} from './constants';
+import {text} from './constants';
 
 const LoanInstallmentTypeActionSheet = ({
   installmentTypeVisible,
@@ -35,10 +34,7 @@ export default LoanInstallmentTypeActionSheet;
 
 const styles = StyleSheet.create({
   normalText: {
-    fontFamily: text.font,
-    fontSize: text.medium,
+    fontSize: text.large,
     textAlign: 'center',
-    color: 'black',
-    fontWeight: 'bold',
   },
 });

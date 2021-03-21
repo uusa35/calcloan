@@ -78,6 +78,8 @@
 		<string>ArchivoNarrow-Regular.ttf</string>
 		<string>ArchivoNarrow-SemiBold.ttf</string>
 		<string>ArchivoNarrow-SemiBoldItalic.ttf</string>
+		<string>Bein-Black.ttf</string>
+		<string>Bein-Normal.ttf</string>
 		<string>Cairo-Black.ttf</string>
 		<string>Cairo-Bold.ttf</string>
 		<string>Cairo_Black.ttf</string>
@@ -94,6 +96,7 @@
 		<string>Comfortaa-Medium.ttf</string>
 		<string>Comfortaa-Regular.ttf</string>
 		<string>Comfortaa-SemiBold.ttf</string>
+		<string>Sst-Arabicbold.ttf</string>
 		<string>Tajawal-Black.ttf</string>
 		<string>Tajawal-Bold.ttf</string>
 		<string>Tajawal-ExtraBold.ttf</string>
@@ -102,10 +105,7 @@
 		<string>Tajawal-Medium.ttf</string>
 		<string>Tajawal-Regular.ttf</string>
 		<string>Varela-Regular.ttf</string>
-		<string>Bein-Black.ttf</string>
-		<string>Bein-Normal.ttf</string>
 		<string>cairo.ttf</string>
-		<string>Sst-Arabicbold.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

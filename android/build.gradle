@@ -2,25 +2,28 @@
 
 buildscript {
     ext {
-        buildToolsVersion = "29.0.2"
-        minSdkVersion = 16
+        googlePlayServicesVersion = "17.0.0"
+        buildToolsVersion = "29.0.3"
         compileSdkVersion = 29
+        minSdkVersion = 21
         targetSdkVersion = 29
+         androidXCore = "1.0.2"
     }
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:3.5.3")
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath('com.android.tools.build:gradle:4.0.1')
+        classpath 'com.google.gms:google-services:4.3.3'
     }
 }
 
 allprojects {
     repositories {
         mavenLocal()
+        mavenCentral()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url("$rootDir/../node_modules/react-native/android")
@@ -29,9 +32,14 @@ allprojects {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
         }
-
+        // ADD THIS
+        maven { url 'https://maven.google.com' }
+        // ADD THIS
+        maven { url "https://www.jitpack.io" }
+         maven { url "http://dl.bintray.com/populov/maven" }
+          maven { url 'https://dl.bintray.com/azeesoft/maven' }
         google()
         jcenter()
-        maven { url 'https://www.jitpack.io' }
     }
 }
+

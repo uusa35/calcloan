@@ -11,10 +11,19 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-public class MainApplication extends Application implements ReactApplication {
+import com.facebook.react.BuildConfig;
+import androidx.multidex.MultiDexApplication;
+import com.microsoft.codepush.react.CodePush;
+
+public class MainApplication extends MultiDexApplication implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost =
       new ReactNativeHost(this) {
+      @Override
+      protected String getJSBundleFile() {
+          return CodePush.getJSBundleFile();
+      }
+
         @Override
         public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
