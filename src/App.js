@@ -8,8 +8,6 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   ScrollView,
-  I18nManager,
-  AsyncStorage,
   Dimensions,
 } from 'react-native';
 import codePush from 'react-native-code-push';
@@ -21,7 +19,6 @@ import LoanPeriodTypeActionSheet from './LoanPeriodTypeActionSheet';
 import {isNull, filter, last, isEmpty, first} from 'lodash';
 import {isNumeric} from 'lodash-contrib';
 import SplashScreen from 'react-native-splash-screen';
-import RNRestart from 'react-native-restart';
 
 const App = () => {
   const [loanAmount, setLoanAmount] = useState('');
