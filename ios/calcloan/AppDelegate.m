@@ -4,6 +4,8 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <CodePush/CodePush.h>
+#import "RNSplashScreen.h"
+#import <React/RCTI18nUtil.h>
 
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
@@ -44,6 +46,12 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  // splash screen
+  [RNSplashScreen show];
+  // force RTL
+  [[RCTI18nUtil sharedInstance] allowRTL:YES];
+    [[RCTI18nUtil sharedInstance] forceRTL:YES];
+  
   return YES;
 }
 

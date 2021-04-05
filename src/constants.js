@@ -4,7 +4,7 @@ import {FIRST_AR_FONT} from './../app.json';
 
 export const colors = {
   main: '#285045',
-  mainLight: '#536565',
+  mainLight: '#637a7a',
   black: 'black',
   white: 'white',
 };

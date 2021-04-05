@@ -8,15 +8,20 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   ScrollView,
+  I18nManager,
+  AsyncStorage,
+  Dimensions,
 } from 'react-native';
 import codePush from 'react-native-code-push';
-import {colors, text, width, height, trans, iconSizes} from './constants';
+import {colors, text, trans, iconSizes} from './constants';
 import {Icon, Input} from 'react-native-elements';
 import LoanInstallmentTypeActionSheet from './LoanInstallmentTypeActionSheet';
 import {numberWithCommas, parseArabicChar, toDecimalPlace} from './helpers';
 import LoanPeriodTypeActionSheet from './LoanPeriodTypeActionSheet';
-import {isNull, filter, last, isEmpty} from 'lodash';
+import {isNull, filter, last, isEmpty, first} from 'lodash';
 import {isNumeric} from 'lodash-contrib';
+import SplashScreen from 'react-native-splash-screen';
+import RNRestart from 'react-native-restart';
 
 const App = () => {
   const [loanAmount, setLoanAmount] = useState('');
@@ -25,17 +30,15 @@ const App = () => {
   const [interestAmount, setInterestAmount] = useState(null);
   const [totalInterestRate, setTotalInterestRate] = useState(null);
   const [amountPayable, setAmountPayable] = useState(null);
-  const [installment, setInstallment] = useState(null); // --> loan
+  const [installment, setInstallment] = useState(null);
   const [showResults, setShowResults] = useState(false);
   const [isReady, setIsReady] = useState(false);
-
   const [periodTypeVisible, setPeriodTypeVisible] = useState(false);
   const [periodTypeSelected, setPeriodTypeSelected] = useState(null);
   const [periodTypeOptions, setPeriodTypeOptions] = useState([
     {id: 0, label: trans.MONTH, value: 'MONTH'},
     {id: 1, label: trans.YEAR, value: 'YEAR'},
   ]);
-
   const [installmentTypeVisible, setInstallmentTypeVisible] = useState(false);
   const [installmentTypeSelected, setInstallmentTypeSelected] = useState(null);
   const [
@@ -50,6 +53,7 @@ const App = () => {
   const [installmentTypeOptions, setInstallmentTypeOptions] = useState(
     fixedInstallmentTypeOptions,
   );
+  const {width, height} = Dimensions.get('window');
 
   useMemo(() => {
     if (!isNull(periodTypeSelected)) {
@@ -61,15 +65,24 @@ const App = () => {
           ),
         );
       } else {
-        setInstallmentTypeOptions(fixedInstallmentTypeOptions);
+        if (loanPeriod <= 12) {
+          setInstallmentTypeOptions(
+            filter(
+              fixedInstallmentTypeOptions,
+              (o) => o.yearToMonth <= loanPeriod,
+            ),
+          );
+        } else {
+          setInstallmentTypeOptions(fixedInstallmentTypeOptions);
+        }
       }
     }
-    setInstallmentTypeSelected(last(installmentTypeOptions));
+    setInstallmentTypeSelected(first(installmentTypeOptions));
   }, [periodTypeSelected, loanPeriod]);
 
   useMemo(() => {
     setPeriodTypeSelected(last(periodTypeOptions));
-    setInstallmentTypeSelected(last(installmentTypeOptions));
+    setInstallmentTypeSelected(first(fixedInstallmentTypeOptions));
   }, []);
 
   const reset = () => {
@@ -77,7 +90,7 @@ const App = () => {
     setInterestRate('');
     setLoanPeriod('');
     setPeriodTypeSelected(last(periodTypeOptions));
-    setInstallmentTypeSelected(last(installmentTypeOptions));
+    setInstallmentTypeSelected(first(fixedInstallmentTypeOptions));
     setShowResults(false);
     setIsReady(false);
   };
@@ -120,7 +133,7 @@ const App = () => {
             ? loanPeriod / installmentTypeSelected.yearToMonth
             : loanPeriod * installmentTypeSelected.yearToPeriod;
         const B = 1 - 1 / Math.pow(1 + J, n);
-        const payable = parseFloat(loanAmount * (J / B) * n).toFixed(2);
+        const payable = parseFloat(loanAmount * (J / B) * n).toFixed(3);
         setAmountPayable(numberWithCommas(payable));
         const intAmount = toDecimalPlace(payable - loanAmount);
         setTotalInterestRate(
@@ -136,37 +149,52 @@ const App = () => {
 
   useEffect(() => {
     codePush.sync({installMode: codePush.InstallMode.IMMEDIATE});
+    codePush.checkForUpdate().then((update) => {
+      if (!update) {
+      } else {
+      }
+    });
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 2000);
   }, []);
 
+  const handleLoanPeriod = (period) => {
+    if (period <= 1 && periodTypeSelected.id === 1) {
+      setLoanPeriod(12 * period);
+    } else {
+      setLoanPeriod(period);
+    }
+  };
+
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
+    <ScrollView
+      contentContainerStyle={{
+        padding: 10,
+        justifyContent: 'flex-start',
+        // minHeight: height,
+        //   height : '100%',
         backgroundColor: '#1b1b1b',
-      }}>
+      }}
+      style={{backgroundColor: '#1b1b1b'}}
+      // contentInset={{bottom: iconSizes.medium}}
+      horizontal={false}
+      scrollEnabled={true}
+      automaticallyAdjustContentInsets={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}>
       <StatusBar
         animated={true}
         backgroundColor="#284d43"
         barStyle={'light-content'}
       />
-      <ScrollView
-        contentContainerStyle={{
-          paddingTop: '10%',
-          padding: 10,
-          justifyContent: 'center',
-        }}
-        contentInset={{bottom: iconSizes.huge}}
-        horizontal={false}
-        scrollEnabled={true}
-        automaticallyAdjustContentInsets={false}
-        showsHorizontalScrollIndicator={false}
-        showsVerticalScrollIndicator={false}>
-        <KeyboardAvoidingView
-          behavior={'padding'}
-          keyboardVerticalOffset={iconSizes.huge}
-          style={{}}>
+      <SafeAreaView />
+      <KeyboardAvoidingView
+        behavior={'padding'}
+        // keyboardVerticalOffset={iconSizes.huge}
+      >
+        <View style={{paddingTop: 20}}>
           <Input
-            placeholder={trans.loanAmount}
             inputContainerStyle={styles.inputContainerStyle}
             inputStyle={styles.inputStyle}
             label={trans.loanAmount}
@@ -174,13 +202,13 @@ const App = () => {
             value={loanAmount}
             textContentType={'telephoneNumber'}
             shake={true}
+            maxLength={15}
             keyboardType="numeric"
             onChangeText={(text) =>
               setLoanAmount(parseFloat(parseArabicChar(text)))
             }
           />
           <Input
-            placeholder={trans.interestRate}
             inputContainerStyle={styles.inputContainerStyle}
             inputStyle={styles.inputStyle}
             label={trans.interestRate}
@@ -188,13 +216,13 @@ const App = () => {
             value={interestRate}
             textContentType={'telephoneNumber'}
             shake={true}
+            maxLength={7}
             keyboardType="numeric"
             onChangeText={(text) =>
               setInterestRate(parseFloat(parseArabicChar(text)))
             }
           />
           <Input
-            placeholder={trans.loanPeriod}
             inputContainerStyle={[styles.inputContainerStyle]}
             inputStyle={styles.inputStyle}
             label={trans.loanPeriod}
@@ -202,9 +230,10 @@ const App = () => {
             value={loanPeriod}
             textContentType={'telephoneNumber'}
             shake={true}
+            maxLength={5}
             keyboardType="numeric"
             onChangeText={(text) =>
-              setLoanPeriod(parseFloat(parseArabicChar(text)))
+              handleLoanPeriod(parseFloat(parseArabicChar(text)))
             }
             rightIcon={() => (
               <TouchableOpacity
@@ -244,7 +273,6 @@ const App = () => {
                 borderColor: colors.mainLight,
                 flex: 1,
                 height: 50,
-                // paddingLeft: 20,
                 justifyContent: 'flex-start',
                 alignItems: 'center',
               }}
@@ -254,12 +282,12 @@ const App = () => {
               <Text
                 style={{
                   fontSize: text.large,
-                  color: colors.mainLight,
+                  color: colors.white,
                   paddingLeft: 15,
                 }}>
                 {!isEmpty(installmentTypeSelected)
                   ? installmentTypeSelected.label
-                  : trans.installmentType}
+                  : first(fixedInstallmentTypeOptions).label}
               </Text>
             </TouchableOpacity>
           </View>
@@ -285,7 +313,11 @@ const App = () => {
                 backgroundColor: !isReady ? 'grey' : colors.main,
                 padding: 20,
               }}>
-              <Text style={[styles.normalText, {fontSize: text.medium}]}>
+              <Text
+                style={[
+                  styles.normalText,
+                  {fontSize: text.medium, color: colors.white},
+                ]}>
                 {trans.calcYourLoan}
               </Text>
             </TouchableOpacity>
@@ -300,7 +332,11 @@ const App = () => {
                 flexDirection: 'row',
                 padding: 20,
               }}>
-              <Text style={[styles.normalText, {fontSize: text.medium}]}>
+              <Text
+                style={[
+                  styles.normalText,
+                  {fontSize: text.medium, color: colors.white},
+                ]}>
                 {trans.reset}
               </Text>
               <Icon
@@ -311,72 +347,46 @@ const App = () => {
               />
             </TouchableOpacity>
           </View>
-
           {showResults && (
             <View
               style={{
                 borderWidth: 1,
-                flex: 1,
+                height: height / 4,
+                maxHeight: height / 4,
                 justifyContent: 'center',
                 alignItems: 'center',
                 borderRadius: 5,
-                borderColor: 'white',
+                borderColor: colors.mainLight,
                 marginLeft: 10,
                 marginRight: 10,
+                padding: 5,
               }}>
-              <View
-                style={{
-                  flex: 1,
-                  flexDirection: 'row',
-                  paddingLeft: 10,
-                  paddingRight: 10,
-                  justifyContent: 'flex-start',
-                  alignItems: 'center',
-                  height: 50,
-                }}>
+              <View style={styles.resultRow}>
                 <View style={{flex: 0.4}}>
                   <Text style={styles.normalText}>{trans.installment}</Text>
                 </View>
                 <View style={{flex: 0.6, flexDirection: 'row'}}>
-                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={[styles.normalText, {paddingRight: 5}]}>:</Text>
                   <Text style={styles.resultText}>{installment}</Text>
                 </View>
               </View>
 
-              <View
-                style={{
-                  flex: 1,
-                  flexDirection: 'row',
-                  paddingLeft: 10,
-                  paddingRight: 10,
-                  justifyContent: 'flex-start',
-                  alignItems: 'center',
-                  height: 50,
-                }}>
+              <View style={styles.resultRow}>
                 <View style={{flex: 0.4}}>
                   <Text style={[styles.normalText]}>{trans.interest}</Text>
                 </View>
                 <View style={{flex: 0.6, flexDirection: 'row'}}>
-                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={[styles.normalText, {paddingRight: 5}]}>:</Text>
                   <Text style={styles.resultText}>{interestAmount}</Text>
                 </View>
               </View>
 
-              <View
-                style={{
-                  flex: 1,
-                  flexDirection: 'row',
-                  paddingLeft: 10,
-                  paddingRight: 10,
-                  justifyContent: 'flex-start',
-                  alignItems: 'center',
-                  height: 50,
-                }}>
+              <View style={styles.resultRow}>
                 <View style={{flex: 0.4}}>
                   <Text style={[styles.normalText]}>{trans.amountPayable}</Text>
                 </View>
                 <View style={{flex: 0.6, flexDirection: 'row'}}>
-                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={[styles.normalText, {paddingRight: 5}]}>:</Text>
                   <Text style={styles.resultText}>{amountPayable}</Text>
                 </View>
               </View>
@@ -395,31 +405,31 @@ const App = () => {
                   <Text style={[styles.normalText]}>{trans.realInterest}</Text>
                 </View>
                 <View style={{flex: 0.6, flexDirection: 'row'}}>
-                  <Text style={[styles.normalText, {paddingRight: 15}]}>:</Text>
+                  <Text style={[styles.normalText, {paddingRight: 5}]}>:</Text>
                   <Text style={styles.resultText}>% {totalInterestRate}</Text>
                 </View>
               </View>
             </View>
           )}
-        </KeyboardAvoidingView>
-        <LoanInstallmentTypeActionSheet
-          installmentTypeVisible={installmentTypeVisible}
-          setInstallmentTypeVisible={setInstallmentTypeVisible}
-          setInstallmentTypeSelected={setInstallmentTypeSelected}
-          installmentTypeSelected={installmentTypeSelected}
-          installmentTypeOptions={installmentTypeOptions}
-          setInstallmentTypeOptions={setInstallmentTypeOptions}
-        />
-        <LoanPeriodTypeActionSheet
-          periodTypeOptions={periodTypeOptions}
-          periodTypeSelected={periodTypeSelected}
-          periodTypeVisible={periodTypeVisible}
-          setPeriodTypeSelected={setPeriodTypeSelected}
-          setPeriodTypeOptions={setPeriodTypeOptions}
-          setPeriodTypeVisible={setPeriodTypeVisible}
-        />
-      </ScrollView>
-    </SafeAreaView>
+          <LoanInstallmentTypeActionSheet
+            installmentTypeVisible={installmentTypeVisible}
+            setInstallmentTypeVisible={setInstallmentTypeVisible}
+            setInstallmentTypeSelected={setInstallmentTypeSelected}
+            installmentTypeSelected={installmentTypeSelected}
+            installmentTypeOptions={installmentTypeOptions}
+            setInstallmentTypeOptions={setInstallmentTypeOptions}
+          />
+          <LoanPeriodTypeActionSheet
+            periodTypeOptions={periodTypeOptions}
+            periodTypeSelected={periodTypeSelected}
+            periodTypeVisible={periodTypeVisible}
+            setPeriodTypeSelected={setPeriodTypeSelected}
+            setPeriodTypeOptions={setPeriodTypeOptions}
+            setPeriodTypeVisible={setPeriodTypeVisible}
+          />
+        </View>
+      </KeyboardAvoidingView>
+    </ScrollView>
   );
 };
 
@@ -444,7 +454,6 @@ const styles = StyleSheet.create({
     textAlign: 'left',
   },
   titleLabelStyle: {
-    // fontFamily: text.font,
     fontSize: text.medium,
     paddingRight: 10,
     textAlign: 'left',
@@ -455,7 +464,7 @@ const styles = StyleSheet.create({
   normalText: {
     fontSize: text.medium,
     textAlign: 'left',
-    color: colors.white,
+    color: colors.mainLight,
     fontWeight: 'bold',
   },
   resultText: {
@@ -463,5 +472,16 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     color: colors.white,
     fontWeight: 'bold',
+  },
+  resultRow: {
+    flex: 1,
+    flexDirection: 'row',
+    marginLeft: 10,
+    marginRight: 10,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    height: 50,
+    borderBottomColor: colors.mainLight,
+    borderBottomWidth: 0.5,
   },
 });

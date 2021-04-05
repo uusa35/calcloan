@@ -22,6 +22,7 @@ const LoanPeriodTypeActionSheet = ({
       }}
       optionTextStyle={styles.normalText}
       onCancelPress={() => setPeriodTypeVisible(false)}
+      title={'اختر'}
       cancelBtnText={'الغاء'}
       cancelTextStyle={styles.normalText}
     />

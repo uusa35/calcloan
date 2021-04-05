@@ -15,7 +15,7 @@ const LoanInstallmentTypeActionSheet = ({
     <Actionsheet
       visible={installmentTypeVisible}
       data={installmentTypeOptions}
-      title={'اختر نوع القسط'}
+      title={'اختر'}
       selected={installmentTypeSelected}
       onOptionPress={(e) => {
         setInstallmentTypeSelected(e);
